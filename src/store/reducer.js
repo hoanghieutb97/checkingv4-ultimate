@@ -1,7 +1,7 @@
 import { SET_TODO } from "./constants"
 export const initState = {
-    todo: [],
-    todoInput: ""
+    gllm: [],
+    silicon: []
 }
 function reducer(state, action) {
     switch (action.type) {
