@@ -1,5 +1,9 @@
-import { SET_TODO } from './constants';
-export const set_todo = payload => ({
-    type: SET_TODO,
+import { SET_GLLM,SET_SILICON } from './constants';
+export const getGllmAPI = payload => ({
+    type: SET_GLLM,
+    payload
+})
+export const getSiliconAPI = payload => ({
+    type: SET_SILICON,
     payload
 })

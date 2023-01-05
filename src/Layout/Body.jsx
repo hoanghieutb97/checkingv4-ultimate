@@ -1,4 +1,5 @@
 import React from 'react';
+import InputExcel from '../Components/InPutExcel';
 
 function Body(props) {
     return (
@@ -8,7 +9,7 @@ function Body(props) {
                     <div className="title-col">
                         Excel
                     </div>
-
+                    <InputExcel />
                 </div>
                 <div className=" grid-tag">
                     <div className="title-col">
