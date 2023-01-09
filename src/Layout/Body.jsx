@@ -1,5 +1,6 @@
 import React from 'react';
 import InputExcel from '../Components/InPutExcel';
+import Products from './Products';
 
 function Body(props) {
     return (
@@ -15,6 +16,7 @@ function Body(props) {
                     <div className="title-col">
                         Chọn sản phẩm
                     </div>
+                    <Products />
                 </div>
                 <div className=" grid-tag">
                     <div className="title-col">
