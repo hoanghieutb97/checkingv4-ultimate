@@ -1,8 +1,8 @@
-import { SET_GLLM, SET_SILICON } from "./constants";
+import { SET_GLLM, SET_SHEET } from "./constants";
 
 export const initState = {
     gllm: [],
-    silicon: []
+    sheet: []
 }
 
 
@@ -14,10 +14,10 @@ function reducer(state, action) {
                 gllm: action.payload
             }
 
-        case SET_SILICON:
+        case SET_SHEET:
             return {
                 ...state,
-                silicon: action.payload
+                sheet: action.payload
             }
 
         default:

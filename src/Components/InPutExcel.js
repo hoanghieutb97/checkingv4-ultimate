@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
-import readXlsxFile from 'read-excel-file'
+import readXlsxFile from 'read-excel-file';
+import { useStore, actions } from '../store';
+
 function InputExcel(props) {
+    const [state, dispatch] = useStore();
+    const { gllm, sheet } = state
 
     useEffect(() => {
         const input = document.getElementById('input')
@@ -25,7 +29,9 @@ function InputExcel(props) {
                 }))
                 newSheet.shift();
                 newSheet.shift();
-                console.log(newSheet);
+                
+                dispatch(actions.dispatchSheet(newSheet))
+
                 // `rows` is an array of rows
                 // each row being an array of cells.
             })

@@ -1,9 +1,9 @@
-import { SET_GLLM,SET_SILICON } from './constants';
-export const getGllmAPI = payload => ({
+import { SET_GLLM, SET_SHEET } from './constants';
+export const dispatchGLLM = payload => ({
     type: SET_GLLM,
     payload
 })
-export const getSiliconAPI = payload => ({
-    type: SET_SILICON,
+export const dispatchSheet = payload => ({
+    type: SET_SHEET,
     payload
 })
