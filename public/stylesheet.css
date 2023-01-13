@@ -1,5 +1,74 @@
 *{margin: 0;padding: 0}
 
+.tble {
+    max-height: 82vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.tble::-webkit-scrollbar-track {
+    background: #999999;
+    width: 3px;
+    border-radius: 4px !important;
+}
+
+.tble::-webkit-scrollbar {
+    background: #29837e;
+    width: 6px !important;
+    border-radius: 4px !important;
+}
+
+.tble::-webkit-scrollbar-thumb {
+    background: #464646;
+    border-radius: 4px !important;
+    width: 5px;
+}
+
+.tble::-webkit-scrollbar {
+    width: 21px;
+    background: #e9e9e9;
+    color: #e13535;
+}
+
+.tble::-webkit-scrollbar-thumb {
+    color: #000;
+    width: 3px;
+}
+
+.sku-x {
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.url-sku.sku-x {
+    width: 51%;
+    height: 35px;
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 20px;
+    display: inline-flex;
+    justify-content: end;
+}
+
+.stt-sku.sku-x {
+    width: 40px;
+}
+
+.tr-sku {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.tr-sku:nth-child(even) {
+    background: #f2f2f2;
+}
+
 li.ant-menu-submenu.ant-menu-submenu-inline {
     border-bottom: 1px solid;
 }

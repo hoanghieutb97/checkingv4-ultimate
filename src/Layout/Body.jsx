@@ -1,4 +1,5 @@
 import React from 'react';
+import CheckSKU from '../Components/CheckSKU';
 import InputExcel from '../Components/InPutExcel';
 import Products from './Products';
 
@@ -22,6 +23,7 @@ function Body(props) {
                     <div className="title-col">
                         Kiểm tra design
                     </div>
+                    <CheckSKU />
                 </div>
                 <div className=" grid-tag">
                     <div className="title-col">

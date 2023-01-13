@@ -1,8 +1,10 @@
-import { SET_GLLM, SET_SHEET } from "./constants";
+import { SET_GLLM, SET_SHEET, SET_PRODUCT } from "./constants";
 
 export const initState = {
     gllm: [],
-    sheet: []
+    sheet: [],
+    activeProduct: { list: null, product: null }
+
 }
 
 
@@ -19,7 +21,11 @@ function reducer(state, action) {
                 ...state,
                 sheet: action.payload
             }
-
+        case SET_PRODUCT:
+            return {
+                ...state,
+                activeProduct: action.payload
+            }
         default:
             throw console.log("invalid action", action);
     }

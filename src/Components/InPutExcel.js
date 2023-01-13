@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import readXlsxFile from 'read-excel-file';
 import { useStore, actions } from '../store';
+import mapSheetGllm from '../CalcFunctions/mapSheetGllm';
+import checkActiveProduct from '../CalcFunctions/checkActiveProduct';
 
 function InputExcel(props) {
     const [state, dispatch] = useStore();
     const { gllm, sheet } = state
-
     useEffect(() => {
         const input = document.getElementById('input')
         document.getElementById('input').addEventListener('change', () => {
@@ -27,17 +28,15 @@ function InputExcel(props) {
                     LineItemName: item[13],
                     LocalFile: item[14],
                 }))
-                newSheet.shift();
-                newSheet.shift();
-                
-                dispatch(actions.dispatchSheet(newSheet))
+                newSheet.shift(); newSheet.shift();
+                if (gllm.length !== 0) dispatch(actions.dispatchSheet(mapSheetGllm({ gllm, sheet: newSheet })));
 
-                // `rows` is an array of rows
-                // each row being an array of cells.
             })
         })
-    }, []);
-
+    });
+    useEffect(() => {
+        dispatch(actions.dispatchProduct(checkActiveProduct(sheet)))
+    }, [sheet]);
     return (
         <div>
             <input type="file" id="input" />
