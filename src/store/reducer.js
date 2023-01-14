@@ -3,7 +3,7 @@ import { SET_GLLM, SET_SHEET, SET_PRODUCT } from "./constants";
 export const initState = {
     gllm: [],
     sheet: [],
-    activeProduct: { list: null, product: null }
+    activeProduct: { list: null, product: null,fileName:null }
 
 }
 

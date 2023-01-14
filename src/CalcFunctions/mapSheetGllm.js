@@ -39,12 +39,7 @@ export default function mapSheetGllm({ sheet, gllm }) {
             amountFile: arr[0].amountFile
         })
     })
-    // let newSheet = [];
-    // sheet.array.forEach(item => {
-    //     for (let i = 0; i < item.Quantity; i++) {
-    //         newSheet.push({ ...item, Quantity: 1 })
-    //     }
-    // });
+  
 
     return sheet
 }

@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import readXlsxFile from 'read-excel-file';
 import { useStore, actions } from '../store';
 import mapSheetGllm from '../CalcFunctions/mapSheetGllm';
 import checkActiveProduct from '../CalcFunctions/checkActiveProduct';
-
-function InputExcel(props) {
+import DownloadJson from '../Components/DownloadJson';
+import sortSheet from '../CalcFunctions/sortSheet';
+function Excel(props) {
     const [state, dispatch] = useStore();
-    const { gllm, sheet } = state
+    const { gllm, sheet, activeProduct } = state;
+    const [Filename, setFilename] = useState();
     useEffect(() => {
         const input = document.getElementById('input')
         document.getElementById('input').addEventListener('change', () => {
@@ -29,19 +31,29 @@ function InputExcel(props) {
                     LocalFile: item[14],
                 }))
                 newSheet.shift(); newSheet.shift();
-                if (gllm.length !== 0) dispatch(actions.dispatchSheet(mapSheetGllm({ gllm, sheet: newSheet })));
+                if (gllm.length !== 0) {
+                    dispatch(actions.dispatchSheet(mapSheetGllm({ gllm, sheet: newSheet })));
+                    setFilename(input.files[0].name)
+                };
 
             })
         })
+        // console.log(input.files[0].name);
     });
+
     useEffect(() => {
-        dispatch(actions.dispatchProduct(checkActiveProduct(sheet)))
+        // console.log(sheet);
+
+        dispatch(actions.dispatchProduct({ ...checkActiveProduct(sheet), fileName: Filename }))
     }, [sheet]);
+    if (sheet.length !== 0) sortSheet(sheet, activeProduct.product)
+
     return (
         <div>
             <input type="file" id="input" />
+            {/* <DownloadJson /> */}
         </div>
     );
 }
 
-export default InputExcel;
+export default Excel;

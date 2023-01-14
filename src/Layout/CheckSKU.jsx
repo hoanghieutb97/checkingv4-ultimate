@@ -43,7 +43,7 @@ function CheckSKU(props) {
         copy(sku)
         setSKULocal([...SKULocal, sku.toLowerCase()])
     }
-    console.log("sdvsdv");
+    // console.log("sdvsdv");
     return (
         <div>
             <div className="d-flex justify-content-center">

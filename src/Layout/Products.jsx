@@ -30,9 +30,10 @@ function Products(props) {
             dispatch(actions.dispatchProduct({ ...activeProduct, list: latestOpenKey ? latestOpenKey : "" }))
         }
     };
+    
     return (
         <div>
-            Products
+            
             <Menu
                 selectedKeys={[activeProduct.product]}
                 openKeys={[activeProduct.list]}
