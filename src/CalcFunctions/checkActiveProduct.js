@@ -4,7 +4,7 @@ import { PRODUCTS } from '../constants';
 
 export default function checkActiveProduct(sheet) {
     let activeProduct = _.uniq(sheet.map(item => item.button));
-    console.log(activeProduct);
+    
 
     activeProduct = activeProduct.map(item => {
        

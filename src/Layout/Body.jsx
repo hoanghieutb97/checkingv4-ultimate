@@ -7,7 +7,7 @@ function Body(props) {
     return (
         <>
             <div className='d-grid'>
-                <div className=" grid-tag">
+                <div className=" grid-tag grid-excel">
                     <div className="title-col">
                         Excel
                     </div>

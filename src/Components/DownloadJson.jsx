@@ -2,10 +2,11 @@
 import React from 'react';
 import _ from 'lodash';
 import { useStore, actions } from '../store';
+import sortSheet from '../CalcFunctions/sortSheet';
 
 function DownloadJson(props) {
     const [state, dispatch] = useStore();
-    const { activeProduct, sheet } = state
+    let  { activeProduct, sheet } = state
 
 
     let saveTextAsFile = (param) => {
@@ -18,27 +19,18 @@ function DownloadJson(props) {
         downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
         downloadLink.click();
     }
-
-    // let items = JSON.parse(JSON.stringify(props.items));
-    // if (props.typeTable === "silicon") {
-
-    //     items = items.map(item => {
-    //         item = item.map(z9Sort1 => {
-    //             let a = _.chunk(z9Sort1, 8); return a
-    //         });
-    //         return item
-    //     })
-
-    // };
+    sheet = sortSheet(sheet, activeProduct.product)
 
 
-    //   let thongso = { wAll: props.TableValue.wAll, hAll: props.TableValue.hAll, FileDesign: props.FileDesign }
 
     let strWrite = {
         items: sheet,
         type: activeProduct.product,
         FileName: activeProduct.FileName,
-        // thongso: thongso
+        hAll: activeProduct.hAll,
+        wAll: activeProduct.wAll,
+        FileDesign: ""
+
     };
 
     return (

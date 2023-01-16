@@ -1,5 +1,66 @@
 *{margin: 0;padding: 0}
 
+span.tachvr-pro {
+    font-size: 0.8rem;
+    margin-left: 12px;
+}
+
+span.vr-am {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 6px;
+}
+
+.tach-variant {
+    margin: 1px;
+    width: 100%;
+    border: 1px dashed #ff000047;
+}
+
+button.bt-vr {
+    border: 0;
+    background: #0578af87;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 1px 4px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+}
+
+button.bt-vr:focus {
+    border: 0;
+    outline: 0;
+}
+
+.bt-active {
+    background: #000 !important;
+}
+
+.ctn-tach-vr {
+    width: 90%;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    margin: auto;
+}
+
+p.title-ex {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    font-size: 1rem;
+    font-family: unset;
+    font-weight: 700;
+    color: #1e7bb1;
+}
+
+.ctn-excel {
+    margin: 5px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
 .tble {
     max-height: 82vh;
     overflow-y: auto;
@@ -94,6 +155,10 @@ li.ant-menu-submenu.ant-menu-submenu-inline {
     border-radius: 5px;
     border: 5px solid #343a406e;
     box-sizing: border-box;
+}
+
+.grid-excel {
+    background: #0000 !important;
 }
 
 .d-grid {

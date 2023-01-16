@@ -4,11 +4,12 @@ import { FileTextTwoTone, LikeFilled } from '@ant-design/icons';
 import copy from 'copy-to-clipboard';
 import _ from "lodash";
 function CheckSKU(props) {
-    const [SKULocal, setSKULocal] = useState([]);
-    const [state, dispatch] = useStore();
-    const { sheet } = state;
-    const [FileClick, setFileClick] = useState([]);
 
+    const [state, dispatch] = useStore();
+    const { sheet,activeProduct } = state;
+    const [FileClick, setFileClick] = useState([]);
+    
+    let localFile = activeProduct.localFile;
     const handlegetLocalFile = (event) => {
         let arr = [];
         let input = event.target;
@@ -19,17 +20,18 @@ function CheckSKU(props) {
             name = name.join(".").toLowerCase();
             arr.push(name);
         }
-        setSKULocal(arr);
+        dispatch(actions.dispatchProduct({ localFile: arr }));
+
     }
     let lostSheet = sheet.map(item => {
         if (item.amountFile == "1") {
-            if (_.intersection(SKULocal, [item.sku.toLowerCase()]).length == 0) return ({ ...item, haveSku: false })
+            if (_.intersection(localFile, [item.sku.toLowerCase()]).length == 0) return ({ ...item, haveSku: false })
             else return ({ ...item, haveSku: true })
         }
         else {
-            if (_.intersection(SKULocal, [(item.sku + " front").toLowerCase()]).length == 0) item = { ...item, haveSkuFront: false }
+            if (_.intersection(localFile, [(item.sku + " front").toLowerCase()]).length == 0) item = { ...item, haveSkuFront: false }
             else item = { ...item, haveSkuFront: true }
-            if (_.intersection(SKULocal, [(item.sku + " back").toLowerCase()]).length == 0) item = { ...item, haveSkuBack: false }
+            if (_.intersection(localFile, [(item.sku + " back").toLowerCase()]).length == 0) item = { ...item, haveSkuBack: false }
             else item = { ...item, haveSkuBack: true }
             return item
         }
@@ -40,8 +42,10 @@ function CheckSKU(props) {
 
     let copyImage = (sku, amountFile, type) => {
         if (amountFile !== "1") sku = sku + type;
-        copy(sku)
-        setSKULocal([...SKULocal, sku.toLowerCase()])
+        copy(sku);
+        dispatch(actions.dispatchProduct({ localFile: [...localFile, sku.toLowerCase()] }));
+
+
     }
     // console.log("sdvsdv");
     return (
@@ -66,12 +70,12 @@ function CheckSKU(props) {
                             <div className='url-sku sku-x'>{item.sku}</div>
                             <div className='down-sku1 sku-x'>
                                 <a href={item.urlDesign.split(";")[0]} target="_blank" onClick={() => copyImage(item.sku, item.amountFile, " front")} >
-                                    {(_.intersection(SKULocal, [(item.amountFile === "1" ? item.sku : (item.sku + " front")).toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
+                                    {(_.intersection(localFile, [(item.amountFile === "1" ? item.sku : (item.sku + " front")).toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
                                 </a>
                             </div>
                             {item.amountFile !== "1" ? <div className='down-sku2 sku-x'>
                                 <a href={item.urlDesign.split(";")[0]} target="_blank" onClick={() => copyImage(item.sku, item.amountFile, " back")} >
-                                    {(_.intersection(SKULocal, [(item.sku + " back").toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
+                                    {(_.intersection(localFile, [(item.sku + " back").toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
                                 </a>
                             </div> : <div className='down-sku2 sku-x'>
 

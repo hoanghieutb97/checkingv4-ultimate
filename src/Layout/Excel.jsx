@@ -5,6 +5,7 @@ import mapSheetGllm from '../CalcFunctions/mapSheetGllm';
 import checkActiveProduct from '../CalcFunctions/checkActiveProduct';
 import DownloadJson from '../Components/DownloadJson';
 import sortSheet from '../CalcFunctions/sortSheet';
+import TachVariant from '../Components/TachVariant';
 function Excel(props) {
     const [state, dispatch] = useStore();
     const { gllm, sheet, activeProduct } = state;
@@ -38,7 +39,7 @@ function Excel(props) {
 
             })
         })
-        // console.log(input.files[0].name);
+
     });
 
     useEffect(() => {
@@ -46,13 +47,30 @@ function Excel(props) {
 
         dispatch(actions.dispatchProduct({ ...checkActiveProduct(sheet), fileName: Filename }))
     }, [sheet]);
-    if (sheet.length !== 0) sortSheet(sheet, activeProduct.product)
 
-    return (
-        <div>
+
+    return (<>
+        <div className='ctn-excel mt-3'>
+            <div className=""><p className="title-ex">input Excel- download JSON</p></div>
             <input type="file" id="input" />
-            {/* <DownloadJson /> */}
+            {(sheet.length !== 0) ? <DownloadJson /> : ""}
         </div>
+        <div className=" ctn-excel tach-sku mt-3">
+            <div className="">
+                <p className="title-ex">Tách bằng Design</p>
+                <TachVariant />
+            </div>
+
+        </div>
+        <div className=" ctn-excel tach-sku mt-3">
+            <div className="">  <p className="title-ex">Tách bằng Variant</p></div>
+
+        </div>
+        <div className=" ctn-excel tach-sku mt-3">
+            <div className="">  <p className="title-ex">Thống kê</p></div>
+
+        </div>
+    </>
     );
 }
 
