@@ -32,7 +32,7 @@ function Products(props) {
     };
     
     return (
-        <div>
+        <div className='ctn-pro'>
             
             <Menu
                 selectedKeys={[activeProduct.product]}

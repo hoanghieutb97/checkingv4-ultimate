@@ -1,4 +1,32 @@
-*{margin: 0;padding: 0}
+* {
+    margin: 0;
+    padding: 0
+}
+
+.ct-kvr {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ctn-pro {
+    overflow-y: scroll;
+    max-height: 88vh;
+}
+
+span.sl-tachvr {
+    color: red;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.bt-sl {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 3px;
+}
 
 span.tachvr-pro {
     font-size: 0.8rem;
@@ -85,16 +113,27 @@ p.title-ex {
     width: 5px;
 }
 
-.tble::-webkit-scrollbar {
-    width: 21px;
-    background: #e9e9e9;
-    color: #e13535;
+
+.ctn-pro::-webkit-scrollbar-track {
+    background: #000c16;
+    width: 3px;
+    border-radius: 4px !important;
 }
 
-.tble::-webkit-scrollbar-thumb {
-    color: #000;
-    width: 3px;
+.ctn-pro::-webkit-scrollbar {
+    background: #29837e;
+    width: 6px !important;
+    border-radius: 4px !important;
 }
+
+.ctn-pro::-webkit-scrollbar-thumb {
+    background: #000c16;
+    border-radius: 4px !important;
+    width: 5px;
+}
+
+
+
 
 .sku-x {
     width: 14%;
@@ -157,6 +196,16 @@ li.ant-menu-submenu.ant-menu-submenu-inline {
     box-sizing: border-box;
 }
 
+.btfile {
+    color: #fff;
+    background-color: #0074fb;
+    border: 2px solid #007cf7;
+    padding: 4px 11px;
+    border-radius: 6px;
+    font-family: monospace;
+}
+
+
 .grid-excel {
     background: #0000 !important;
 }
@@ -185,7 +234,10 @@ li.ant-menu-submenu.ant-menu-submenu-inline {
 .nav-link.cp {
     cursor: pointer;
 }
-html, body, #fullheight {
+
+html,
+body,
+#fullheight {
     min-height: 100% !important;
     height: 100%;
 }

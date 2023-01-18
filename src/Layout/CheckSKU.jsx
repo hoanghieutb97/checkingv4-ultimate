@@ -6,9 +6,9 @@ import _ from "lodash";
 function CheckSKU(props) {
 
     const [state, dispatch] = useStore();
-    const { sheet,activeProduct } = state;
+    const { sheet, activeProduct } = state;
     const [FileClick, setFileClick] = useState([]);
-    
+
     let localFile = activeProduct.localFile;
     const handlegetLocalFile = (event) => {
         let arr = [];
@@ -47,14 +47,44 @@ function CheckSKU(props) {
 
 
     }
-    // console.log("sdvsdv");
+
+    let arrKhaiBao = sheet.filter(item => item.nameId === undefined);
+
+    console.log(sheet);
     return (
         <div>
             <div className="d-flex justify-content-center">
                 <input id='file-input' type='file' className=" btn btn-info" onClick={() => setFileClick([])} onChange={handlegetLocalFile} multiple style={{ display: "none" }} />
-                <label htmlFor="file-input" className="input_exel btn btn-info">Kiểm tra file</label>
+                <label htmlFor="file-input" className="input_exel  btn-info btfile">Kiểm tra file</label>
             </div>
             <div className='tble'>
+                <div className="table table-striped table_amounts">
+                    <div>
+                        <div className='ct-kvr'>
+                            <div className='ort-kvr bdfd' >orderId</div>
+                            <div className='t-kvr bdfd' >product</div>
+                            <div className='b-kvr bdfd' >variant</div>
+                        </div>
+                    </div>
+                    <div>
+                        {arrKhaiBao.map((item, key) => <div key={key} className='ct-kvr'>
+
+                            <div className='ort-kvr'>
+                                {item.orderId}
+                            </div>
+                            <div className='t-kvr'>
+                                {item.product}
+                            </div>
+                            <div className='b-kvr'>
+                                {item.variant}
+                            </div>
+
+                        </div>)}
+
+                    </div>
+                </div>
+
+
                 <div className="table table-striped table_amounts">
                     <div>
                         <div className='tr-sku'>
@@ -86,7 +116,7 @@ function CheckSKU(props) {
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 }
 

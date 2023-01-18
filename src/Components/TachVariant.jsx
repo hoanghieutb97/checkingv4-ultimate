@@ -27,7 +27,7 @@ function TachVariant(props) {
         const ws = XLSX.utils.json_to_sheet(returnSheet)
         const wb = XLSX.utils.book_new()
         XLSX.utils.book_append_sheet(wb, ws, 'Sheet1')
-        XLSX.writeFile(wb, (returnSheet.length - 1) + " " + activeProduct.fileName + '.xlsx')
+        XLSX.writeFile(wb, activeProduct.fileName + '.xlsx')
 
     }
 
@@ -40,10 +40,13 @@ function TachVariant(props) {
                 <span className="tachvr-pro"> {item[0].product} </span>
             </div>)
             }
+            <div className="bt-sl">
+                <Button type="primary" icon={<DownloadOutlined />} size={"Default"} onClick={handleDownExcel}>
+                    Download
+                </Button>
+                <span className="sl-tachvr">Tổng: {sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false).length}</span>
+            </div>
 
-            <Button type="primary" icon={<DownloadOutlined />} size={"Default"} onClick={handleDownExcel}>
-                Download
-            </Button>
         </div >
     );
 }
