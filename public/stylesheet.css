@@ -3,6 +3,46 @@
     padding: 0
 }
 
+span.singer-excel {
+    background: #4d76e9;
+    padding: 1px 10px;
+    border-radius: 9px;
+    color: #fff;
+    display: inline-block;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+span.multi-excel {
+    background: #ff1f1f;
+    padding: 1px 10px;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+    font-family: cursive;
+    display: inline-block;
+
+}
+
+button.btc-orderid {
+    height: 80%;
+    padding: 5px 9px;
+    line-height: 1rem;
+    border: 0;
+    border-radius: 5px;
+    background: #00d706bf;
+    color: #fff;
+    cursor: pointer;
+}
+
+li.btc {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cccc {
     text-align: center;
     line-height: 10rem;
@@ -177,7 +217,7 @@ button.bt-vr:focus {
     margin: auto;
 }
 
-p.title-ex {
+.title-ex {
     margin-bottom: 10px;
     border-bottom: 1px solid #000;
     font-size: 1rem;

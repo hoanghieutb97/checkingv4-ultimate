@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import DownloadJson from '../Components/DownloadJson';
+import InputExcel from '../Components/InputExcel';
 
 import TachVariant from '../Components/TachVariant';
 import TachSKU from '../Components/TachSKU'
@@ -11,9 +11,7 @@ function Excel(props) {
     return (<>
         <div className="tble">
             <div className='ctn-excel mt-3'>
-                <div className=""><p className="title-ex">input Excel- download JSON</p></div>
-                <input type="file" id="input" />
-                <DownloadJson />
+                <InputExcel />
             </div>
             <div className=" ctn-excel tach-sku mt-3">
                 <div className="">
