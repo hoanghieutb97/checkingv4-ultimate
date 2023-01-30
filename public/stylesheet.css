@@ -3,9 +3,113 @@
     padding: 0
 }
 
+.cccc {
+    text-align: center;
+    line-height: 10rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.col-15 {
+    flex: 0 0 14.28571%;
+    max-width: 14.28571%;
+    padding: 5px;
+}
+
+.pstick {
+    position: sticky;
+    top: 0;
+    z-index: 99999999;
+}
+
+.country1 {
+    padding: 3px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    /* border: 1px solid #ff3235; */
+    border-radius: 100px;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 800;
+    font-family: monospace;
+}
+
+.ctn-itemlist {
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.stt1 {
+    text-align: center;
+    color: #0074fb;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 1.05rem;
+}
+
+.variant1 {
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.product1 {
+    text-align: center;
+}
+
+.sku1 {
+    text-align: center;
+    font-size: 0.9rem;
+    /* height: 2rem; */
+    line-height: 1rem;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+}
+
+.nameid1 {
+    text-align: center;
+    color: #ff2b2b;
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.container-80 {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    background: #d7d7d7;
+}
+
+.title-thongke.do {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: red;
+}
+
+p.tsp {
+    margin: 0;
+}
+
+.fgf {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: revert;
+}
+
+.bdfd {
+    font-weight: 500;
+    /* width: 33.33%; */
+}
+
 .ct-kvr {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    border-bottom: 1px dashed #ffc2c2;
+    font-size: 0.9rem;
+    font-family: monospace;
 }
 
 .ctn-pro {
@@ -210,11 +314,28 @@ li.ant-menu-submenu.ant-menu-submenu-inline {
     background: #0000 !important;
 }
 
+.amount {
+    padding: 3px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: 1px solid #ff3235;
+    border-radius: 100px;
+    color: #ff383d;
+    font-size: 01rem;
+    font-weight: 800;
+    line-height: 0.9rem;
+    font-family: monospace;
+}
+.cpt{
+    cursor: pointer;
+}
 .d-grid {
     display: grid;
     min-height: 94vh;
     background: #d7d7d7;
     padding: 0 5px;
+    grid-template-columns: 400px 350px 450px auto;
 }
 
 .b-fileDesign {

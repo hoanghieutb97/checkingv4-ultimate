@@ -4,7 +4,7 @@ import { Button } from 'antd';
 import { useStore, actions } from '../store';
 import _ from "lodash";
 import * as XLSX from 'xlsx';
-
+import dupItems from '../CalcFunctions/dupItems';
 function TachVariant(props) {
     const [state, dispatch] = useStore();
     let { sheet, activeProduct } = state;
@@ -31,11 +31,13 @@ function TachVariant(props) {
 
     }
 
+    let returnSheet = dupItems(sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false))
 
     return (
         <div className='ctn-tach-vr'>
+
             {listVariant.map((item, key) => <div className="tach-variant" key={key}>
-                <span className="vr-am">{item.length}</span>
+
                 <button className={"bt-vr" + ((_.intersection([item[0].variant], ActiveButton).length !== 0) ? " bt-active" : "")} onClick={() => handChangeButton(item[0].variant)}>{item[0].variant}</button>
                 <span className="tachvr-pro"> {item[0].product} </span>
             </div>)
@@ -44,7 +46,7 @@ function TachVariant(props) {
                 <Button type="primary" icon={<DownloadOutlined />} size={"Default"} onClick={handleDownExcel}>
                     Download
                 </Button>
-                <span className="sl-tachvr">Tổng: {sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false).length}</span>
+                <span className="sl-tachvr">Tổng: {returnSheet.length}</span>
             </div>
 
         </div >

@@ -72,7 +72,7 @@ function TachSKU(props) {
                 <Button type="primary" icon={<DownloadOutlined />} size={"Default"} onClick={handleDownExcel}>
                     Download
                 </Button>
-                <span className="sl-tachvr">Tổng: {sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false).length}</span>
+                {/* <span className="sl-tachvr">Tổng: {sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false).length}</span> */}
 
             </div>
         </div >

@@ -8,6 +8,7 @@ import mapSheetGllm from '../CalcFunctions/mapSheetGllm';
 import checkActiveProduct from '../CalcFunctions/checkActiveProduct';
 import { DownloadOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
+import dupItems from '../CalcFunctions/dupItems';
 function DownloadJson(props) {
 
     const [state, dispatch] = useStore();
@@ -38,7 +39,11 @@ function DownloadJson(props) {
                 newSheet.shift(); newSheet.shift();
                 if (gllm.length !== 0) {
                     dispatch(actions.dispatchSheet(mapSheetGllm({ gllm, sheet: newSheet })));
-                    setFilename(input.files[0].name)
+                    let name = input.files[0].name;
+                    name = name.split(".");
+                    name.pop();
+                    name = name.join(".")
+                    setFilename(name)
                 };
 
             })
@@ -47,9 +52,9 @@ function DownloadJson(props) {
     });
 
     useEffect(() => {
+
         dispatch(actions.dispatchProduct({ ...checkActiveProduct(sheet), fileName: Filename }))
     }, [sheet]);
-
 
 
 
@@ -68,19 +73,20 @@ function DownloadJson(props) {
 
 
     let strWrite = {
-        items: sheet,
+        items: dupItems(sheet),
         type: activeProduct.product,
         FileName: activeProduct.FileName,
         hAll: activeProduct.hAll,
         wAll: activeProduct.wAll,
-        FileDesign: ""
+        fileName: activeProduct.fileName,
+        FileDesign: JSON.parse(localStorage.ActiveFileDesign)
 
     };
 
     return (
         <div className="d-flex justify-content-center mt-3 mb-2">
 
-            <Button type="primary" icon={<DownloadOutlined />}ghost={true} size={"Default"} onClick={() => saveTextAsFile(strWrite)}>
+            <Button type="primary" icon={<DownloadOutlined />} ghost={true} size={"Default"} onClick={() => saveTextAsFile(strWrite)}>
                 Download JSON
             </Button>
         </div>

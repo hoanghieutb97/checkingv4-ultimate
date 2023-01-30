@@ -1,6 +1,7 @@
 import React from 'react';
 import CheckSKU from './CheckSKU';
 import Excel from './Excel';
+import ListItems from './ListItems';
 import Products from './Products';
 
 function Body(props) {
@@ -31,7 +32,9 @@ function Body(props) {
                     </div>
                 </div>
             </div>
-
+            <div className="container-80">
+                <ListItems />
+            </div>
         </>
     );
 }

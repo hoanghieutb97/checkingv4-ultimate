@@ -4,6 +4,7 @@ import Body from './Layout/Body';
 import { useStore, actions } from './store';
 import axios from 'axios';
 import * as constants from './constants';
+import AddActiveLocalFile from './Components/AddActiveLocalFile';
 
 function App(props) {
   const [state, dispatch] = useStore();
@@ -21,7 +22,8 @@ function App(props) {
   return (
     <React.Fragment>
       <Navbar />
-      <Body />
+      {localStorage.ActiveFileDesign !== "" ? <Body /> : <AddActiveLocalFile />}
+
     </React.Fragment>
   );
 }

@@ -20,6 +20,7 @@ function DefaultApp(props) {
 
     // console.log(GLLMContext);
     if (localStorage.FileDesign === undefined) localStorage.FileDesign = "[]";
+    if (localStorage.ActiveFileDesign === undefined) localStorage.ActiveFileDesign = "";
     return (
 
         <StoreProvider>

@@ -6,7 +6,7 @@ import { DeleteFilled } from '@ant-design/icons';
 function Navbar(props) {
 
     return (<>
-        <div className="container-fluid h-56">
+        <div className="container-fluid h-56 pstick">
             <div className="row">
                 <div className="col-12 p-0">
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -71,7 +71,11 @@ function ModalURLDesign(props) {
 
     }
     const handleChangeVlue = (value) => setvalueInput(value);
-    
+    let handleChangeActiveFileDesign = (item) => {
+        localStorage.ActiveFileDesign = JSON.stringify(item);
+        window.location.reload(true);
+
+    }
     return (
         <>
             <div className="nav-link cp" onClick={showModal}>
@@ -82,7 +86,7 @@ function ModalURLDesign(props) {
 
                 <div >
                     {arr.map((item, key) => <div key={key} className="ctn-themlink">
-                        <div className="b-fileDesign position-relative"><span className="deleteDSF" onClick={() => deleteFileDesign(item)}>• </span>{item}</div>
+                        <div className="b-fileDesign position-relative" onClick={() => handleChangeActiveFileDesign(item)}><span className="deleteDSF" onClick={() => deleteFileDesign(item)}>• </span>{item}</div>
                         <DeleteFilled onClick={() => deleteFileDesign(item)} />
                     </div>)}
                     <Input placeholder="New Link..." className=" input-file0design mt-2" id="inputLinkDesign" onChange={(e) => handleChangeVlue(e.target.value)} value={valueInput} />
