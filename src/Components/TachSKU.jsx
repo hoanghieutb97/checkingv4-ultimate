@@ -32,7 +32,7 @@ function TachSKU(props) {
     let handleDownExcel = () => {
 
         let returnSheet = [, ...ActiveSheet]
-        console.log(returnSheet.length - 1);
+        console.log(returnSheet);
         const ws = XLSX.utils.json_to_sheet(returnSheet)
         const wb = XLSX.utils.book_new()
         XLSX.utils.book_append_sheet(wb, ws, 'Sheet1')

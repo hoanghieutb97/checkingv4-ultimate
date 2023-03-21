@@ -15,12 +15,13 @@ function InputExcel(props) {
     let { gllm, sheet, activeProduct } = state;
     const [Filename, setFilename] = useState();
     const [MultiExcel, setMultiExcel] = useState(false);
+    const [Excel, setExcel] = useState([]);
     useEffect(() => {
         const input = document.getElementById('input')
         document.getElementById('input').addEventListener('change', () => {
-            let arr = [];
+
             for (let j = 0; j < input.files.length; j++) {
-                readXlsxFile(input.files[j]).then((rows) => {
+                readXlsxFile(input.files[j]).then((rows, a) => {
                     let newSheet = rows.map(item => ({
                         orderId: item[0],
                         barcode: item[1],
@@ -39,16 +40,15 @@ function InputExcel(props) {
                         LocalFile: item[14],
                     }))
                     newSheet.shift(); newSheet.shift();
-                    arr = [...arr, ...newSheet]
-                    console.log(arr);
-
-
+                    if (j == 0) setExcel([...newSheet])
+                    else setExcel([...Excel, ...newSheet])
                 })
 
             }
-            console.log(arr);
+
             if (gllm.length !== 0) {
-                dispatch(actions.dispatchSheet(mapSheetGllm({ gllm, sheet: arr })));
+
+                // dispatch(actions.dispatchSheet(mapSheetGllm({ gllm, sheet: Excel })));
                 let name = input.files[0].name;
                 name = name.split(".");
                 name.pop();
@@ -58,12 +58,15 @@ function InputExcel(props) {
         })
 
     });
-
     useEffect(() => {
-
         dispatch(actions.dispatchProduct({ ...checkActiveProduct(sheet), fileName: Filename }))
     }, [sheet]);
 
+    useEffect(() => {
+        if (gllm.length !== 0) {
+            dispatch(actions.dispatchSheet(mapSheetGllm({ gllm, sheet: Excel })));
+        };
+    }, [Excel]);
 
 
     let saveTextAsFile = (param) => {

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { PRODUCTS } from '../constants';
 import { Button, Menu } from 'antd';
 import { useStore, actions } from '../store';
-
+import _ from "lodash";
 import { PartitionOutlined, } from '@ant-design/icons'
 // import { dispatchProperties } from '../store/actions';
 function Products(props) {
@@ -30,10 +30,38 @@ function Products(props) {
             dispatch(actions.dispatchProduct({ ...activeProduct, list: latestOpenKey ? latestOpenKey : "" }))
         }
     };
-    
+    useEffect(() => {
+        let arrMica = ["keyChain 2 mica",
+            "NEW transparent ORM 1M",
+            "NEW transparent ORM 2M",
+            "ornament mica 1M-fill",
+            "ornament mica 2M-fill",
+            "ornament mica DZT",
+            "mica DZT Style",
+            "mica DZT Style 2M",
+            "ornament led",
+            "3d wood base",
+            "3d woodBase Teemazing"
+        ];
+        let arrGo = ["wood orrnament 2layer",
+            "ornament go 1M-fill",
+            "ornament go 2M-fill",
+            "ornament vong huong",
+            "wood ornament dls",
+        ];
+        let arrMica2cm = ["Heart mica 2cm",
+        ]
+        if (_.indexOf(arrMica, activeProduct.product) !== (-1))
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 800, wAll: 1200 }))
+        else if (_.indexOf(arrGo, activeProduct.product) !== (-1))
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 910, wAll: 910 }))
+        else
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 1200, wAll: 2400 }))
+
+    }, [activeProduct.product]);
     return (
         <div className='ctn-pro'>
-            
+
             <Menu
                 selectedKeys={[activeProduct.product]}
                 openKeys={[activeProduct.list]}

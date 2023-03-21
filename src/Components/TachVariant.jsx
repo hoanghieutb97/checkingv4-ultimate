@@ -23,7 +23,7 @@ function TachVariant(props) {
     let handleDownExcel = () => {
         let returnSheet = sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false);
         returnSheet = [, ...returnSheet]
-        console.log(returnSheet.length - 1);
+        
         const ws = XLSX.utils.json_to_sheet(returnSheet)
         const wb = XLSX.utils.book_new()
         XLSX.utils.book_append_sheet(wb, ws, 'Sheet1')

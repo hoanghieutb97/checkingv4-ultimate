@@ -44,7 +44,7 @@ export const PRODUCTS = [
             ["ornament vong huong", "ornament vòng hương", 1],
             ["ornament led", "ornament led", 1],
             ["wood ornament dls", "wood ornament dls", 1],
-            ["Mica DLS 1M", "Mica DLS 1M", 2],
+
         ]
     ],
     ["Thớt",
@@ -57,7 +57,7 @@ export const PRODUCTS = [
     ],
     [
         "Nhôm, sứ", [
-            ["ornament DLS 1M", "ornament DLS 1M", 1],
+            
             ["ornament nhom 1M", "ornament nhôm 1M", 1],
             ["ornament nhom 2M", "ornament nhôm 2M", 2],
             ["ornament dzt", "quả tạ DZT", 2],
