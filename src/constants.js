@@ -16,7 +16,7 @@ export const PRODUCTS = [
             ["candle holder", "candle holder", 1],
             ["Acrylic Plaque", "Acrylic Plaque", 1],
             ["flag", "cờ", 1],
-            ["bamboowireless", "sạc gỗ", 1],
+            ["bamboowireless", "Bamboo Wireless", 1],
             ["Heart mica 2cm", "Heart mica 2cm", 1],
             ["drink coaster", "drink coaster", 1],
             ["3d wood base", "3d wood base", 1],
@@ -57,7 +57,7 @@ export const PRODUCTS = [
     ],
     [
         "Nhôm, sứ", [
-            
+
             ["ornament nhom 1M", "ornament nhôm 1M", 1],
             ["ornament nhom 2M", "ornament nhôm 2M", 2],
             ["ornament dzt", "quả tạ DZT", 2],

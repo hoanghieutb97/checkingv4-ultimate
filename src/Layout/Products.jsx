@@ -41,7 +41,8 @@ function Products(props) {
             "mica DZT Style 2M",
             "ornament led",
             "3d wood base",
-            "3d woodBase Teemazing"
+            "3d woodBase Teemazing",
+            "Acrylic Plaque"
         ];
         let arrGo = ["wood orrnament 2layer",
             "ornament go 1M-fill",

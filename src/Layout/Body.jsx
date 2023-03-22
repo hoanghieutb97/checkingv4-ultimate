@@ -1,6 +1,7 @@
 import React from 'react';
 import CheckSKU from './CheckSKU';
 import Excel from './Excel';
+import HuongDan from './HuongDan';
 import ListItems from './ListItems';
 import Products from './Products';
 
@@ -28,8 +29,10 @@ function Body(props) {
                 </div>
                 <div className=" grid-tag">
                     <div className="title-col">
+
                         Hướng dẫn
                     </div>
+                    <HuongDan />
                 </div>
             </div>
             <div className="container-80">

@@ -70,13 +70,13 @@ function CheckSKU(props) {
                         <div>
                             {arrKhaiBao.map((item, key) => <div key={key} className='ct-kvr'>
 
-                                <div className='ort-kvr'>
+                                <div className='ort-kvr' onClick={() => copy(item.orderId)}>
                                     {item.orderId}
                                 </div>
-                                <div className='t-kvr'>
+                                <div className='t-kvr' onClick={() => copy(item.product)}>
                                     {item.product}
                                 </div>
-                                <div className='b-kvr'>
+                                <div className='b-kvr' onClick={() => copy(item.variant)}>
                                     {item.variant}
                                 </div>
 
