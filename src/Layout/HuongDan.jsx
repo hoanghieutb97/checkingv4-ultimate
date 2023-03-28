@@ -4,11 +4,19 @@ import AcrylicPlaque from './HuongDan/AcrylicPlaque';
 import Badwoodbase from './HuongDan/Badwoodbase';
 import BadWoodBaseTeemazing from './HuongDan/BadWoodBaseTeemazing';
 import Bamboowireless from './HuongDan/Bamboowireless';
+import CandleHolder from './HuongDan/CandleHolder';
+import Dock from './HuongDan/Dock';
+import KeychainAluminium from './HuongDan/KeychainAluminium';
+import KeychaiNormal from './HuongDan/KeychaiNormal';
+import OrnamentquaTa from './HuongDan/OrnamentquaTa';
+import PCled from './HuongDan/PCled';
+import PCsilicon from './HuongDan/PCsilicon';
+import Printmetal from './HuongDan/Printmetal';
 
 function HuongDan(props) {
     const [state, dispatch] = useStore();
     const activeProduct = state.activeProduct.product
-    console.log(activeProduct);
+    
     let noidung = "";
     switch (activeProduct) {
         case "3d wood base":
@@ -23,7 +31,32 @@ function HuongDan(props) {
         case "bamboowireless":
             noidung = <Bamboowireless />
             break;
-
+        case "candle holder":
+            noidung = <CandleHolder />
+            break;
+        case "dock":
+            noidung = <Dock />
+            break;
+        case "keyChain Alunium":
+            noidung = <KeychainAluminium />
+            break;
+            break;
+        case "keyChain normal":
+            noidung = <KeychaiNormal />
+            break;
+        case "ornament qua ta nhom":
+            noidung = <OrnamentquaTa />
+            break;
+            break;
+        case "PC silicon":
+            noidung = <PCsilicon />
+            break;
+        case "PC led":
+            noidung = <PCled />
+            break;
+        case "print metal":
+            noidung = <Printmetal />
+            break;
         default:
             noidung = ""
             break;

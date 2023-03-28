@@ -12,7 +12,7 @@ function TachSKU(props) {
     const [ActiveSheet, setActiveSheet] = useState([]);
     let localFile = activeProduct.localFile
     let handChangeButton = (param) => {
-        if (!param) {
+        if (param) {
             let arr = sheet.filter(item => {
                 if (item.amountFile === "1") return (_.intersection([item.sku.toLowerCase()], localFile).length !== 0)
                 else return (_.intersection([item.sku.toLowerCase() + " front"], localFile).length !== 0)
@@ -30,15 +30,29 @@ function TachSKU(props) {
     }
 
     let handleDownExcel = () => {
+        let actSheet = ActiveSheet;
+        for (let i = 0; i < actSheet.length; i++) {
+            delete actSheet[i].LocalFile;
+            delete actSheet[i].addGllm;
+            delete actSheet[i].nameId;
+            delete actSheet[i].box;
+            delete actSheet[i].button;
+            delete actSheet[i].direction;
+            delete actSheet[i].width;
+            delete actSheet[i].hight;
+            delete actSheet[i].amountFile;
+
+        }
 
         let returnSheet = [, ...ActiveSheet]
-        console.log(returnSheet);
         const ws = XLSX.utils.json_to_sheet(returnSheet)
         const wb = XLSX.utils.book_new()
         XLSX.utils.book_append_sheet(wb, ws, 'Sheet1')
         XLSX.writeFile(wb, activeProduct.fileName + '.xlsx')
 
     }
+    console.log(ActiveSheet);
+
     useEffect(() => {
         let arr = sheet.filter(item => {
             if (item.amountFile === "1") return (_.intersection([item.sku.toLowerCase()], localFile).length !== 0)
@@ -47,12 +61,12 @@ function TachSKU(props) {
         setActiveSheet(arr)
     }, [sheet, activeProduct.localFile]);
 
-    
+
     return (
         <div className='ctn-tach-vr'>
 
             <div className="tach-variant">
-                <span className="vr-am">{!ActiveButton ? ActiveSheet.length : sheet.length - ActiveSheet.length}</span>
+                <span className="vr-am">{!ActiveButton ? ActiveSheet.length : (sheet.length - ActiveSheet.length)}</span>
                 <button className={"bt-vr" + (ActiveButton ? " bt-active" : "")}
                     onClick={() => handChangeButton(!ActiveButton)}>
                     Đã có file Design
@@ -60,7 +74,7 @@ function TachSKU(props) {
 
             </div>
             <div className="tach-variant ">
-                <span className="vr-am">{ActiveButton ? ActiveSheet.length : sheet.length - ActiveSheet.length}</span>
+                <span className="vr-am">{ActiveButton ? ActiveSheet.length : (sheet.length - ActiveSheet.length)}</span>
                 <button className={"bt-vr" + (!ActiveButton ? " bt-active" : "")}
                     onClick={() => handChangeButton(!ActiveButton)}>
                     Chưa có file Design

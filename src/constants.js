@@ -60,7 +60,7 @@ export const PRODUCTS = [
 
             ["ornament nhom 1M", "ornament nhôm 1M", 1],
             ["ornament nhom 2M", "ornament nhôm 2M", 2],
-            ["ornament dzt", "quả tạ DZT", 2],
+            ["ornament qua ta nhom", "quả tạ DZT", 2],
             ["dia than 2m", "đĩa than 2m", 2],
             ["ornament su 1M", "ornament sứ", 1],
             ["ornament su 2M", "ornament sứ 2 mặt", 2],

@@ -3,10 +3,30 @@
     padding: 0
 }
 
+.t-kvr {
+    width: 33%;
+    overflow: hidden;
+}
+
+.b-kvr {
+    width: 33%;
+    OVERFLOW: hidden;
+}
+
+img.img-ct2 {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+span.ggg {
+    color: red;
+}
+
 img.img-ct {
-    height: 300px;
+    max-height: 300px;
     position: absolute;
     top: 0px;
+    max-width: 150px;
     right: 100px;
 }
 
@@ -221,7 +241,7 @@ span.vr-am {
     border: 1px dashed #ff000047;
 }
 
-button.bt-vr {
+.bt-vr {
     border: 0;
     background: #0578af87;
     color: #fff;
@@ -230,6 +250,8 @@ button.bt-vr {
     border-radius: 6px;
     letter-spacing: 1px;
     margin-left: 2px;
+    max-width: 98%;
+    overflow: hidden;
 }
 
 button.bt-vr:focus {

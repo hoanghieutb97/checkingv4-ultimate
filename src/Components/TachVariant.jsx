@@ -22,7 +22,20 @@ function TachVariant(props) {
 
     let handleDownExcel = () => {
         let returnSheet = sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false);
-        returnSheet = [, ...returnSheet]
+        for (let i = 0; i <returnSheet.length; i++) {
+            delete returnSheet[i].LocalFile;
+            delete returnSheet[i].addGllm;
+            delete returnSheet[i].nameId;
+            delete returnSheet[i].box;
+            delete returnSheet[i].button;
+            delete returnSheet[i].direction;
+            delete returnSheet[i].width;
+            delete returnSheet[i].hight;
+            delete returnSheet[i].amountFile;
+
+        }
+        returnSheet = [, ...returnSheet];
+
         
         const ws = XLSX.utils.json_to_sheet(returnSheet)
         const wb = XLSX.utils.book_new()

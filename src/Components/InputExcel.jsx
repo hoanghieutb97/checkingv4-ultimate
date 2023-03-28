@@ -40,6 +40,8 @@ function InputExcel(props) {
                         LocalFile: item[14],
                     }))
                     newSheet.shift(); newSheet.shift();
+                    newSheet = newSheet.filter(item => item.orderId !== null);
+                    // console.log(newSheet);
                     if (j == 0) setExcel([...newSheet])
                     else setExcel([...Excel, ...newSheet])
                 })
@@ -52,7 +54,8 @@ function InputExcel(props) {
                 let name = input.files[0].name;
                 name = name.split(".");
                 name.pop();
-                name = name.join(".")
+                name = name.join(".");
+
                 setFilename(name)
             };
         })
