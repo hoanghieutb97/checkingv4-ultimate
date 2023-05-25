@@ -8,7 +8,7 @@ function CheckSKU(props) {
     const [state, dispatch] = useStore();
     const { sheet, activeProduct } = state;
     const [FileClick, setFileClick] = useState([]);
-
+    const [DeoMeSheet, setDeoMeSheet] = useState([]);
     let localFile = activeProduct.localFile;
     const handlegetLocalFile = (event) => {
         let arr = [];
@@ -43,11 +43,13 @@ function CheckSKU(props) {
     let copyImage = (sku, amountFile, type) => {
         if (amountFile !== "1") sku = sku + type;
         copy(sku);
-        dispatch(actions.dispatchProduct({ localFile: [...localFile, sku.toLowerCase()] }));
+        setDeoMeSheet([...DeoMeSheet, sku.toLowerCase()])
+        // alert(console.log(sku);)
+        // dispatch(actions.dispatchProduct({ localFile: [...localFile, sku.toLowerCase()] }));
 
 
     }
-
+    
     let arrKhaiBao = sheet.filter(item => item.nameId === undefined);
 
     return (<>
@@ -101,12 +103,12 @@ function CheckSKU(props) {
                             <div className='url-sku sku-x'>{item.sku}</div>
                             <div className='down-sku1 sku-x'>
                                 <a href={item.urlDesign.split(";")[0]} target="_blank" onClick={() => copyImage(item.sku, item.amountFile, " front")} >
-                                    {(_.intersection(localFile, [(item.amountFile === "1" ? item.sku : (item.sku + " front")).toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
+                                    {(_.intersection(DeoMeSheet, [(item.amountFile === "1" ? item.sku : (item.sku + " front")).toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
                                 </a>
                             </div>
                             {item.amountFile !== "1" ? <div className='down-sku2 sku-x'>
-                                <a href={item.urlDesign.split(";")[0]} target="_blank" onClick={() => copyImage(item.sku, item.amountFile, " back")} >
-                                    {(_.intersection(localFile, [(item.sku + " back").toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
+                                <a href={item.urlDesign.split(";")[1]} target="_blank" onClick={() => copyImage(item.sku, item.amountFile, " back")} >
+                                    {(_.intersection(DeoMeSheet, [(item.sku + " back").toLowerCase()]).length === 0) ? <FileTextTwoTone style={{ fontSize: '27px' }} /> : <LikeFilled style={{ fontSize: '20px', color: "#000" }} />}
                                 </a>
                             </div> : <div className='down-sku2 sku-x'>
 

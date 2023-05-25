@@ -1,5 +1,7 @@
 import React from 'react';
 import { useStore, actions } from '../store';
+import AcrylicBlock from './HuongDan/AcrylicBlock';
+import AcrylicDeskPlaque4mm from './HuongDan/AcrylicDeskPlaque4mm';
 import AcrylicPlaque from './HuongDan/AcrylicPlaque';
 import Badwoodbase from './HuongDan/Badwoodbase';
 import BadWoodBaseTeemazing from './HuongDan/BadWoodBaseTeemazing';
@@ -12,11 +14,15 @@ import OrnamentquaTa from './HuongDan/OrnamentquaTa';
 import PCled from './HuongDan/PCled';
 import PCsilicon from './HuongDan/PCsilicon';
 import Printmetal from './HuongDan/Printmetal';
+import AcrylicPlaqueTMZ from './HuongDan/AcrylicPlaqueTMZ';
+import CustomShapeAcrylicBlocks from './HuongDan/CustomShapeAcrylicBlocks';
+import NEWtransparentORM2M from './HuongDan/NEWtransparentORM2M';
+import FatherDayZirror from './HuongDan/FatherDayZirror';
 
 function HuongDan(props) {
     const [state, dispatch] = useStore();
     const activeProduct = state.activeProduct.product
-    
+
     let noidung = "";
     switch (activeProduct) {
         case "3d wood base":
@@ -56,6 +62,24 @@ function HuongDan(props) {
             break;
         case "print metal":
             noidung = <Printmetal />
+            break;
+        case "Acrylic Desk Plaque":
+            noidung = <AcrylicDeskPlaque4mm />
+            break;
+        case "Acrylic Block":
+            noidung = <AcrylicBlock />
+            break;
+        case "Acrylic Plaque TMZ":
+            noidung = <AcrylicPlaqueTMZ />
+            break;
+        case "Custom Shape Acrylic Blocks":
+            noidung = <CustomShapeAcrylicBlocks />
+            break;
+        case "NEW transparent ORM 2M":
+            noidung = <NEWtransparentORM2M />
+            break;
+        case "FatherDayZirror":
+            noidung = <FatherDayZirror />
             break;
         default:
             noidung = ""

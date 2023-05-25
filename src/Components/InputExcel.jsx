@@ -84,7 +84,7 @@ function InputExcel(props) {
     }
     sheet = sortSheet(sheet, activeProduct.product)
 
-
+    console.log(sheet);
 
     let strWrite = {
         items: dupItems(sheet),

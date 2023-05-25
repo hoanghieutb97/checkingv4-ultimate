@@ -1,6 +1,8 @@
 import _ from "lodash";
 import Products from "../Layout/Products";
-export default function mapSheetGllm({ sheet, gllm }) {
+import sortSheet from './sortSheet';
+
+export default function mapSheetGllm({ sheet, gllm, product }) {
 
 
     gllm = gllm.map(item => ({
@@ -10,8 +12,8 @@ export default function mapSheetGllm({ sheet, gllm }) {
         width: Number(item.width),
         box: item.box.split(",").map(item => Number(item)),
         direction: item.direction,
-        ProductType: item.ProductType.split(",").filter(param2 => param2 !== "").map(param => param.toLowerCase().trim()),
-        variant: item.variant.split(",").filter(param2 => param2 !== "").map(param => param.toLowerCase().trim()),
+        ProductType: item.ProductType.split(",").filter(param2 => param2 !== "").map(param => param.toLowerCase().trim().replace(/ /g, '')),
+        variant: item.variant.split(",").filter(param2 => param2 !== "").map(param => param.toLowerCase().trim().replace(/ /g, '')),
         button: item.button ? item.button : "normal",
         amountFile: (item.amountFile !== "1" && item.amountFile !== "2") ? "1" : item.amountFile
     }))
@@ -19,8 +21,8 @@ export default function mapSheetGllm({ sheet, gllm }) {
 
     sheet = sheet.map(item => ({
         ...item,
-        product: item.product.toLowerCase(),
-        variant: item.variant.toLowerCase()
+        product: item.product.toLowerCase().trim().replace(/ /g, ''),
+        variant: item.variant.toLowerCase().trim().replace(/ /g, '')
 
     })).map(itemSheet => {
         let arr = gllm
@@ -39,7 +41,10 @@ export default function mapSheetGllm({ sheet, gllm }) {
             amountFile: arr[0].amountFile
         })
     })
+    
 
+    // sheet = sortSheet(sheet, product);
 
+    console.log(sheet);
     return sheet
 }

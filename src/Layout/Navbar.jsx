@@ -90,10 +90,11 @@ function ModalURLDesign(props) {
                         <div className="b-fileDesign position-relative" onClick={() => handleChangeActiveFileDesign(item)}><span className="deleteDSF" onClick={() => deleteFileDesign(item)}>• </span>{item}</div>
                         <DeleteFilled onClick={() => deleteFileDesign(item)} />
                     </div>)}
-                    <Input placeholder="New Link..." className=" input-file0design mt-2" id="inputLinkDesign" onChange={(e) => handleChangeVlue(e.target.value)} value={valueInput} />
+                    {/* <Input placeholder="New Link..." className=" input-file0design mt-2" id="inputLinkDesign" onChange={(e) => handleChangeVlue(e.target.value)} value={valueInput} />
                     <div className='d-flex align-items-center justify-content-center mt-2'>
                         <Button type="primary" size="small" className='b-center' onClick={addFileDesign} >Add link design</Button>
-                    </div>
+                    </div> */}
+                    
 
                 </div>
             </Modal>

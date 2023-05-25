@@ -1,5 +1,6 @@
+// export const GLLM = "https://sheetdb.io/api/v1/mobao5qvh19ze";
 export const GLLM = "https://sheet.best/api/sheets/0c6ecbff-1ea5-4717-998c-546dd52034cb";
-export const SILICON = "https://sheet.best/api/sheets/a6626440-fdcc-41a2-9779-ae2b35a7767a";
+// export const SILICON = "https://sheet.best/api/sheets/a6626440-fdcc-41a2-9779-ae2b35a7767a";
 
 export const PRODUCTS = [
     ["SP Bình Thường",
@@ -13,11 +14,24 @@ export const PRODUCTS = [
             ["cut metal", "cut metal", 1],
             ["normal", "normal", 1],
             ["mirror normal", "normal mirror", 1],
+            ["mirror normal StrokFile", "mirror normal StrokFile", 1],
             ["candle holder", "candle holder", 1],
             ["Acrylic Plaque", "Acrylic Plaque", 1],
-            ["flag", "cờ", 1],
+            ["Acrylic Plaque TMZ", "Acrylic Plaque TMZ", 1],
+            ["flag", "flag", 1],
+            ["blank", "blank", 1],
             ["bamboowireless", "Bamboo Wireless", 1],
             ["Heart mica 2cm", "Heart mica 2cm", 1],
+            ["Acrylic Block", "Acrylic Block", 1],
+            ["Acrylic Desk Plaque", "Acrylic Desk Plaque", 1],
+            ["Wallet Insert Card", "Wallet Insert Card", 2],
+            ["Custom Shape Acrylic Blocks", "Custom Shape Acrylic Blocks", 1],
+            ["Wooden Block", "Wooden Block", 1],
+            ["photo frame lamp", "photo frame lamp", 1],
+            ["new Dock", "new Dock", 1],
+            ["FatherDayZirror", "FatherDayZirror", 1],
+            
+
             ["drink coaster", "drink coaster", 1],
             ["3d wood base", "3d wood base", 1],
             ["3d woodBase Teemazing", "3d woodBase Teemazing", 1],
@@ -28,7 +42,7 @@ export const PRODUCTS = [
     ["Ornament, móc khóa",
         [
             ["keyChain normal", "keyChain normal", 2],
-            ["keyChain 2 mica", "keyChain 2 mica", 2],
+            ["keyChain mirror", "keyChain mirror", 2],
             ["keyChain Alunium", "keyChain Alunium", 2],
             ["wood orrnament 2layer", "wood orrnament 2layer", 2],
             ["ornament go 1M-fill", "ornament gỗ 1M (Bàn cắt)", 1],
@@ -72,10 +86,12 @@ export const PRODUCTS = [
             ["coc30oz", "coc30oz", 1],
             ["skinni-20oz", "skinni-20oz", 1],
             ["wine-12oz", "wine-12oz", 1],
+            ["C Plant Pot", "C Plant Pot", 1],
         ]
     ], [
         "Đặc biệt", [
             ["kinlytoy", "kinlytoy", 0],
+            ["2 layer vc", "2 layer vc", 1],
             ["tem normal", "in tem", 0],
         ]
     ]

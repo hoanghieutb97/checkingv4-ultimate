@@ -4,10 +4,11 @@ import { PRODUCTS } from '../constants';
 
 export default function checkActiveProduct(sheet) {
     let activeProduct = _.uniq(sheet.map(item => item.button));
+
     
 
     activeProduct = activeProduct.map(item => {
-       
+
         let item2;
         for (let i = 0; i < PRODUCTS.length; i++) {
             for (let j = 0; j < PRODUCTS[i][1].length; j++) {
@@ -21,8 +22,8 @@ export default function checkActiveProduct(sheet) {
             }
         }
 
-        // console.log(item2);
+        
     })
-
+    
     return activeProduct[0]
 }

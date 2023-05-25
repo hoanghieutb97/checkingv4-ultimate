@@ -44,6 +44,7 @@ function TachVariant(props) {
 
     }
 
+    
     let returnSheet = dupItems(sheet.filter(item => (_.intersection([item.variant], ActiveButton).length !== 0) ? true : false))
 
     return (

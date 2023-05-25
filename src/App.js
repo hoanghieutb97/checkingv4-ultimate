@@ -28,7 +28,7 @@ function App(props) {
         <div className="inner"></div>
       </div> : ""}
       <Navbar />
-      {localStorage.ActiveFileDesign !== "" ? <Body /> : <AddActiveLocalFile />}
+      <Body />
 
     </React.Fragment>
   );

@@ -31,7 +31,7 @@ function Products(props) {
         }
     };
     useEffect(() => {
-        let arrMica = ["keyChain 2 mica",
+        let arrMica = ["keyChain mirror",
             "NEW transparent ORM 1M",
             "NEW transparent ORM 2M",
             "ornament mica 1M-fill",
@@ -42,22 +42,32 @@ function Products(props) {
             "ornament led",
             "3d wood base",
             "3d woodBase Teemazing",
-            "Acrylic Plaque"
+            "Acrylic Plaque",
+            "ornament qua ta nhom",
+            "Acrylic Plaque TMZ",
+            "mirror normal StrokFile",
+            "photo frame lamp"
         ];
         let arrGo = ["wood orrnament 2layer",
             "ornament go 1M-fill",
             "ornament go 2M-fill",
             "ornament vong huong",
             "wood ornament dls",
+
+
         ];
+        let arrGoXXXXXX = ["FatherDayZirror"]
         let arrMica2cm = ["Heart mica 2cm",
+            "Acrylic Block"
         ]
         if (_.indexOf(arrMica, activeProduct.product) !== (-1))
-            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 800, wAll: 1200 }))
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 812, wAll: 1200 }))
         else if (_.indexOf(arrGo, activeProduct.product) !== (-1))
             dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 910, wAll: 910 }))
-        else
-            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 1200, wAll: 2400 }))
+        else if (_.indexOf(arrMica2cm, activeProduct.product) !== (-1))
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 350, wAll: 2440 }))
+        else if (_.indexOf(arrGoXXXXXX, activeProduct.product) !== (-1))
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 915, wAll: 915 }))
 
     }, [activeProduct.product]);
     return (

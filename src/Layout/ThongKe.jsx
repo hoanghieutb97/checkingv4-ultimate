@@ -5,8 +5,9 @@ import dupItems from "../CalcFunctions/dupItems";
 function ThongKe(props) {
     const [state, dispatch] = useStore();
     let { sheet, activeProduct } = state;
+
     sheet = dupItems(sheet);
-    
+
 
     let arrNameId = _.uniq(sheet.map(item => item.nameId));
     arrNameId = arrNameId.map(item => sheet.filter(itemF => itemF.nameId === item))

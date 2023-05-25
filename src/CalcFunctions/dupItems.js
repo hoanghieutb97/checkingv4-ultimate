@@ -5,6 +5,8 @@ export default function dupItems(sheet) {
             newSheet.push(sheet[j])
         }
     }
-    newSheet = newSheet.map((item, key) => ({ ...item, stt: key + 1 }))
+    newSheet = newSheet.map((item, key) => ({ ...item, stt: key + 1 }));
+    let arrOrderId = newSheet.map(item => item.orderId);
+    newSheet = newSheet.map(item => ({ ...item, Quantity: arrOrderId.filter(itemx => itemx === item.orderId).length }))
     return newSheet
 }
