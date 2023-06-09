@@ -44,14 +44,15 @@ export default function sortSheet(sheet, product) {
             product === "thot amazone" ||
             product === "PC silicon" ||
             product === "FatherDayZirror" ||
+            product === "dia nhua" ||
             product === "mica DZT Style") {
             sheet = _.orderBy(sheet, ['variant', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
         }
         else {
-            console.log(sheet);
+            
 
             sheet = _.orderBy(sheet, ['orderId', 'variant', 'sku'], ['asc', 'asc', 'asc']);
-            console.log(sheet);
+         
 
             sheet = sheet.map((item, key) => ({ ...item, stt: key + 1 }));
         }

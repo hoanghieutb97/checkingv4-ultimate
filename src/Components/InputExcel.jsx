@@ -19,7 +19,7 @@ function InputExcel(props) {
     useEffect(() => {
         const input = document.getElementById('input')
         document.getElementById('input').addEventListener('change', () => {
-
+            var listA = [];
             for (let j = 0; j < input.files.length; j++) {
                 readXlsxFile(input.files[j]).then((rows, a) => {
                     let newSheet = rows.map(item => ({
@@ -41,12 +41,14 @@ function InputExcel(props) {
                     }))
                     newSheet.shift(); newSheet.shift();
                     newSheet = newSheet.filter(item => item.orderId !== null);
-                    // console.log(newSheet);
-                    if (j == 0) setExcel([...newSheet])
-                    else setExcel([...Excel, ...newSheet])
+                    listA = [...listA, ...newSheet]
+                    console.log(listA);
+                    // if (j == 0) setExcel([...newSheet])
+                    // else setExcel([...Excel, ...newSheet])
+                    setExcel(listA)
                 })
-
             }
+            console.log(listA);
 
             if (gllm.length !== 0) {
 
@@ -84,7 +86,7 @@ function InputExcel(props) {
     }
     sheet = sortSheet(sheet, activeProduct.product)
 
-    console.log(sheet);
+
 
     let strWrite = {
         items: dupItems(sheet),
@@ -107,7 +109,7 @@ function InputExcel(props) {
             ? <input type="file" id="input" multiple />
             : <input type="file" id="input" />
         }
-        {/* <input type="file" id="input" /> */}
+
         <div className="d-flex justify-content-center mt-3 mb-2">
             <Button type="primary" icon={<DownloadOutlined />} ghost={true} size={"Default"} onClick={() => saveTextAsFile(strWrite)}>
                 Download JSON

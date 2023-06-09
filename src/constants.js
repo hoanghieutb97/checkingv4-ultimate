@@ -35,6 +35,7 @@ export const PRODUCTS = [
             ["drink coaster", "drink coaster", 1],
             ["3d wood base", "3d wood base", 1],
             ["3d woodBase Teemazing", "3d woodBase Teemazing", 1],
+            ["dia nhua", "dia nhua", 1],
 
 
         ]

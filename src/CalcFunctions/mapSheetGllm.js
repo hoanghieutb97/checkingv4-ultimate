@@ -45,6 +45,5 @@ export default function mapSheetGllm({ sheet, gllm, product }) {
 
     // sheet = sortSheet(sheet, product);
 
-    console.log(sheet);
     return sheet
 }
