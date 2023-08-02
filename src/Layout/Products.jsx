@@ -59,7 +59,8 @@ function Products(props) {
         let arrGoXXXXXX = ["FatherDayZirror"]
         let arrMica2cm = ["Heart mica 2cm",
             "Acrylic Block"
-        ]
+        ];
+        let arrNauBan = ["ornament su 1M", "ornament su 2M"];
         if (_.indexOf(arrMica, activeProduct.product) !== (-1))
             dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 812, wAll: 1200 }))
         else if (_.indexOf(arrGo, activeProduct.product) !== (-1))
@@ -68,6 +69,8 @@ function Products(props) {
             dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 350, wAll: 2440 }))
         else if (_.indexOf(arrGoXXXXXX, activeProduct.product) !== (-1))
             dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 915, wAll: 915 }))
+        else if (_.indexOf(arrNauBan, activeProduct.product) !== (-1))
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 600, wAll: 2400 }))
 
     }, [activeProduct.product]);
     return (

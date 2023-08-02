@@ -30,7 +30,7 @@ export const PRODUCTS = [
             ["photo frame lamp", "photo frame lamp", 1],
             ["new Dock", "new Dock", 1],
             ["FatherDayZirror", "FatherDayZirror", 1],
-            
+
 
             ["drink coaster", "drink coaster", 1],
             ["3d wood base", "3d wood base", 1],
@@ -92,6 +92,8 @@ export const PRODUCTS = [
     ], [
         "Đặc biệt", [
             ["kinlytoy", "kinlytoy", 0],
+            ["cai gi day", "cai gi day", 1],
+            ["reusable school", "reusable school", 1],
             ["2 layer vc", "2 layer vc", 1],
             ["tem normal", "in tem", 0],
         ]

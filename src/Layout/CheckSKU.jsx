@@ -7,7 +7,8 @@ function CheckSKU(props) {
 
     const [state, dispatch] = useStore();
     const { sheet, activeProduct } = state;
-    const [FileClick, setFileClick] = useState([]);
+    console.log(state.sheet);
+
     const [DeoMeSheet, setDeoMeSheet] = useState([]);
     let localFile = activeProduct.localFile;
     const handlegetLocalFile = (event) => {
@@ -20,6 +21,7 @@ function CheckSKU(props) {
             name = name.join(".").toLowerCase();
             arr.push(name);
         }
+        console.log(arr);
         dispatch(actions.dispatchProduct({ localFile: arr }));
 
     }
@@ -49,13 +51,12 @@ function CheckSKU(props) {
 
 
     }
-    
     let arrKhaiBao = sheet.filter(item => item.nameId === undefined);
 
     return (<>
         {sheet.length !== 0 ? <div>
             <div className="d-flex justify-content-center">
-                <input id='file-input' type='file' className=" btn btn-info" onClick={() => setFileClick([])} onChange={handlegetLocalFile} multiple style={{ display: "none" }} />
+                <input id='file-input' type='file' className=" btn btn-info" onChange={handlegetLocalFile} multiple style={{ display: "none" }} />
                 <label htmlFor="file-input" className="input_exel  btn-info btfile">Kiểm tra file</label>
             </div>
 

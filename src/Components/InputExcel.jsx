@@ -42,13 +42,13 @@ function InputExcel(props) {
                     newSheet.shift(); newSheet.shift();
                     newSheet = newSheet.filter(item => item.orderId !== null);
                     listA = [...listA, ...newSheet]
-                    console.log(listA);
+               
                     // if (j == 0) setExcel([...newSheet])
                     // else setExcel([...Excel, ...newSheet])
                     setExcel(listA)
                 })
             }
-            console.log(listA);
+         
 
             if (gllm.length !== 0) {
 
