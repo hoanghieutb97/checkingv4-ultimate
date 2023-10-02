@@ -18,6 +18,9 @@ import AcrylicPlaqueTMZ from './HuongDan/AcrylicPlaqueTMZ';
 import CustomShapeAcrylicBlocks from './HuongDan/CustomShapeAcrylicBlocks';
 import NEWtransparentORM2M from './HuongDan/NEWtransparentORM2M';
 import FatherDayZirror from './HuongDan/FatherDayZirror';
+import Hailayerwooden from './HuongDan/Hailayerwooden';
+import Balayerwooden from './HuongDan/Balayerwooden';
+
 
 function HuongDan(props) {
     const [state, dispatch] = useStore();
@@ -80,6 +83,13 @@ function HuongDan(props) {
             break;
         case "FatherDayZirror":
             noidung = <FatherDayZirror />
+            break;
+
+        case "2layer wood ornament":
+            noidung = <Hailayerwooden />
+            break;
+        case "3layer wood ornament":
+            noidung = <Balayerwooden />
             break;
         default:
             noidung = ""

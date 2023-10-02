@@ -24,16 +24,19 @@ export const PRODUCTS = [
             ["Heart mica 2cm", "Heart mica 2cm", 1],
             ["Acrylic Block", "Acrylic Block", 1],
             ["Acrylic Desk Plaque", "Acrylic Desk Plaque", 1],
-            ["Wallet Insert Card", "Wallet Insert Card", 2],
+            ["1M Wallet Insert Card", "1M Wallet Insert Card", 1],
+            ["2M Wallet Insert Card", "2M Wallet Insert Card", 2],
             ["Custom Shape Acrylic Blocks", "Custom Shape Acrylic Blocks", 1],
             ["Wooden Block", "Wooden Block", 1],
             ["photo frame lamp", "photo frame lamp", 1],
             ["new Dock", "new Dock", 1],
             ["FatherDayZirror", "FatherDayZirror", 1],
+            ["normal strokeFile", "normal strokeFile", 1],
 
 
             ["drink coaster", "drink coaster", 1],
             ["3d wood base", "3d wood base", 1],
+            ["3d led light print base", "3d led light print base", 1],
             ["3d woodBase Teemazing", "3d woodBase Teemazing", 1],
             ["dia nhua", "dia nhua", 1],
 
@@ -54,11 +57,21 @@ export const PRODUCTS = [
             ["ornament mica 1M-fill", "ornament mica 1M (Bàn cắt)", 1],
             ["ornament mica 2M-fill", "ornament mica 2M (Bàn cắt)", 2],
             ["ornament mica DZT", "ornament mica DZT", 1],
-            ["mica DZT Style", "mica DZT Style", 1],
+            ["mica fix ornament 1M", "mica fix ornament 1M", 1],
+            ["mica fix ornament 2M", "mica fix ornament 2M", 2],
+            ["wood fix ornament 1M", "wood fix ornament 1M", 1],
+            ["wood fix ornament 2M", "wood fix ornament 2M", 2],
             ["mica DZT Style 2M", "mica DZT Style 2M", 2],
             ["ornament vong huong", "ornament vòng hương", 1],
             ["ornament led", "ornament led", 1],
             ["wood ornament dls", "wood ornament dls", 1],
+            ["3layer wood ornament", "3layer wood ornament", 1],
+            ["2layer wood ornament", "2layer wood ornament", 1],
+            ["Tumble Name Tag", "Tumble Name Tag", 1],
+            ["glassOrnament", "glass Ornament", 1],
+            ["Leather Keychain", "Leather Keychain", 1],
+            ["3L Shaker Ornament", "3L Shaker Ornament", 1],
+            ["5L Shaker Ornament", "5L Shaker Ornament", 1],
 
         ]
     ],
@@ -66,6 +79,7 @@ export const PRODUCTS = [
         [
             ["thot den", "Thớt Đen", 1],
             ["thot 5mm", "Thớt 5mm", 1],
+            ["thot 5mm 2M", "Thớt 5mm 2 mặt", 2],
             ["thot amazone", "Thớt AMAZONE", 1],
             ["woodSignTwoSign", "Thớt 5mm 2 mặt", 2],
         ]

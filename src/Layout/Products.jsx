@@ -37,8 +37,8 @@ function Products(props) {
             "ornament mica 1M-fill",
             "ornament mica 2M-fill",
             "ornament mica DZT",
-            "mica DZT Style",
-            "mica DZT Style 2M",
+            "mica fix ornament 2M",
+            "mica fix ornament 1M",
             "ornament led",
             "3d wood base",
             "3d woodBase Teemazing",
@@ -46,13 +46,26 @@ function Products(props) {
             "ornament qua ta nhom",
             "Acrylic Plaque TMZ",
             "mirror normal StrokFile",
-            "photo frame lamp"
+            "photo frame lamp",
+            "Acrylic Desk Plaque",
+            "mica fix ornament 1M",
+            "mica fix ornament 2M",
+            "Tumble Name Tag",
+            "5L Shaker Ornament",
+            "3L Shaker Ornament"
+            
         ];
         let arrGo = ["wood orrnament 2layer",
             "ornament go 1M-fill",
             "ornament go 2M-fill",
             "ornament vong huong",
             "wood ornament dls",
+            "wood fix ornament 2M", +
+            "wood fix ornament 1M",
+            "3layer wood ornament",
+            "2layer wood ornament",
+            "wood fix ornament 1M",
+            "wood fix ornament 2M"
 
 
         ];
@@ -73,6 +86,7 @@ function Products(props) {
             dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 600, wAll: 2400 }))
 
     }, [activeProduct.product]);
+    console.log(state);
     return (
         <div className='ctn-pro'>
 
