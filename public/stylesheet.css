@@ -3,6 +3,35 @@
     padding: 0
 }
 
+.bdffb {
+    width: 100%;
+}
+
+p.vsjdhvs {
+    font-size: 0.8rem;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+input.kjvbskvsjn {
+    margin: 0 20px;
+}
+
+input.kjvbskvsjn {
+    margin-left: 1rem;
+}
+
+.vdv {
+    background: #ff8c8c;
+}
+
+.vsvsd {
+    background: #fff;
+}
+
 .ctn-js {
     background: #dfdfdfb3;
     width: 100%;
@@ -235,8 +264,9 @@ span.sl-tachvr {
 }
 
 span.tachvr-pro {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     margin-left: 12px;
+    font-weight: 500;
 }
 
 span.vr-am {
@@ -262,6 +292,7 @@ span.vr-am {
     margin-left: 2px;
     max-width: 98%;
     overflow: hidden;
+    font-size: 0.8rem;
 }
 
 button.bt-vr:focus {
@@ -271,6 +302,7 @@ button.bt-vr:focus {
 
 .bt-active {
     background: #000 !important;
+    font-size: 0.8rem;
 }
 
 .ctn-tach-vr {
@@ -445,7 +477,7 @@ li.ant-menu-submenu.ant-menu-submenu-inline {
     min-height: 94vh;
     background: #d7d7d7;
     padding: 0 5px;
-    grid-template-columns: 400px 350px 450px auto;
+    grid-template-columns: 530px 350px 450px auto;
 }
 
 .b-fileDesign {
@@ -479,6 +511,10 @@ body,
     height: 100%;
     background: #fff9;
     z-index: 9;
+}
+
+button.ant-btn.css-dev-only-do-not-override-k83k30.ant-btn-primary.svsv {
+    margin-left: 20rem;
 }
 
 .outer,
@@ -522,3 +558,35 @@ body,
         transform: rotate(360deg);
     }
 }
+
+button.ant-btn.css-dev-only-do-not-override-k83k30.ant-btn-primary.ant-btn-background-ghost {
+    width: 28rem;
+    height: 3rem;
+}
+
+
+/* file upload button
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 50px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+} */
+
+/* ------------------------ */
+

@@ -21,13 +21,13 @@ export default function mapSheetGllm({ sheet, gllm, product }) {
 
     sheet = sheet.map(item => ({
         ...item,
-        product: item.product.toLowerCase().trim().replace(/ /g, ''),
-        variant: item.variant.toLowerCase().trim().replace(/ /g, '')
+        // product: item.product.toLowerCase().trim().replace(/ /g, ''),
+        // variant: item.variant.toLowerCase().trim().replace(/ /g, '')
 
     })).map(itemSheet => {
         let arr = gllm
-            .filter(itemGllm => _.intersection(itemGllm.ProductType, [itemSheet.product]).length !== 0)
-            .filter(itemx => _.intersection(itemx.variant, [itemSheet.variant]).length !== 0)
+            .filter(itemGllm => _.intersection(itemGllm.ProductType, [itemSheet.product.toLowerCase().trim().replace(/ /g, '')]).length !== 0)
+            .filter(itemx => _.intersection(itemx.variant, [itemSheet.variant.toLowerCase().trim().replace(/ /g, '')]).length !== 0)
         if (arr.length == 0) return ({ ...itemSheet, addGllm: false })
         else return ({
             ...itemSheet,
@@ -41,9 +41,9 @@ export default function mapSheetGllm({ sheet, gllm, product }) {
             amountFile: arr[0].amountFile
         })
     })
-    
+
 
     // sheet = sortSheet(sheet, product);
 
     return sheet
-}
+}   

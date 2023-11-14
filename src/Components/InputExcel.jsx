@@ -106,8 +106,8 @@ function InputExcel(props) {
         </div>
 
         {(MultiExcel)
-            ? <input type="file" id="input" multiple />
-            : <input type="file" id="input" />
+            ? <input type="file" className='bdffb' id="input" multiple />
+            : <input type="file" className='bdffb' id="input" />
         }
 
         <div className="d-flex justify-content-center mt-3 mb-2">
