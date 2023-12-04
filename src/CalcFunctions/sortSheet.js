@@ -33,6 +33,7 @@ export default function sortSheet(sheet, product) {
 
     }
     else
+
         if (product === "PC glass" ||
             product === "PC luminous" ||
             product === "PC led" ||
@@ -44,17 +45,26 @@ export default function sortSheet(sheet, product) {
             product === "thot amazone" ||
             product === "PC silicon" ||
             product === "FatherDayZirror" ||
+
+
+
             product === "dia nhua" ||
             product === "mica DZT Style") {
             sheet = _.orderBy(sheet, ['variant', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
+
+
+        }
+        else if (product === "NEW transparent ORM 1M" ||
+            product === "NEW transparent ORM 2M") {
+            sheet = _.orderBy(sheet, ['nameId', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
         }
         else {
-            
+
 
             sheet = _.orderBy(sheet, ['orderId', 'variant', 'sku'], ['asc', 'asc', 'asc']);
-         
+
 
             sheet = sheet.map((item, key) => ({ ...item, stt: key + 1 }));
         }
     return sheet
-}
+} 

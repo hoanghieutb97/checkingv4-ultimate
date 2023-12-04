@@ -37,8 +37,7 @@ function Products(props) {
             "ornament mica 1M-fill",
             "ornament mica 2M-fill",
             "ornament mica DZT",
-            "mica fix ornament 2M",
-            "mica fix ornament 1M",
+    
             "ornament led",
             "3d wood base",
             "3d woodBase Teemazing",

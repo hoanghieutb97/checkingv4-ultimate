@@ -77,7 +77,8 @@ export const PRODUCTS = [
             ["2 layer mix", "2 layer mix", 1],
             ["Glitter Plastic Ornament", "Glitter Plastic Ornament", 1],
             ["Glitter Plastic Ornament 2M", "Glitter Plastic Ornament 2M", 1],
-
+            ["Round Plastic Led String Light", "Round Plastic Led String Light", 1],
+            
         ]
     ],
     ["Thớt",
