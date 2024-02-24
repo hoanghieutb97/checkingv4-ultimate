@@ -12,8 +12,10 @@ function App(props) {
   const [loadding, setloadding] = useState(true);
   useEffect(() => { // fetch GLLM
     async function fetchData() {
-      const gllmAPI = await axios(constants.GLLM);
-      dispatch(actions.dispatchGLLM(gllmAPI.data));
+      var gllmAPI = await axios(constants.GLLM);
+      gllmAPI =gllmAPI.data.filter(item=>item.width!==null)
+      // console.log(gllmAPI);
+      dispatch(actions.dispatchGLLM(gllmAPI));
       setloadding(false)
     }
     fetchData();

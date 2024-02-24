@@ -55,6 +55,8 @@ export default function sortSheet(sheet, product) {
 
         }
         else if (product === "NEW transparent ORM 1M" ||
+            product === "Leather Keychain" ||
+            product === "2M Leather Keychain" ||
             product === "NEW transparent ORM 2M") {
             sheet = _.orderBy(sheet, ['nameId', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
         }

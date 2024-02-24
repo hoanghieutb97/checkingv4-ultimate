@@ -4,7 +4,7 @@ import sortSheet from './sortSheet';
 
 export default function mapSheetGllm({ sheet, gllm, product }) {
 
-
+    console.log(gllm.filter(item => item.width == null));
     gllm = gllm.map(item => ({
         ...item,
         nameId: item.nameId,

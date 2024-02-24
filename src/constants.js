@@ -1,5 +1,5 @@
 // export const GLLM = "https://sheetdb.io/api/v1/mobao5qvh19ze";
-export const GLLM = "https://sheet.best/api/sheets/0c6ecbff-1ea5-4717-998c-546dd52034cb";
+export const GLLM = "https://sheet.best/api/sheets/e8876c80-1778-414d-ae68-af6b9ec1289c";
 // export const SILICON = "https://sheet.best/api/sheets/a6626440-fdcc-41a2-9779-ae2b35a7767a";
 
 export const PRODUCTS = [
@@ -32,7 +32,11 @@ export const PRODUCTS = [
             ["photo frame lamp", "photo frame lamp", 1],
             ["new Dock", "new Dock", 1],
             ["FatherDayZirror", "FatherDayZirror", 1],
+            ["photobox", "photobox", 1],
             ["normal strokeFile", "normal strokeFile", 1],
+            ["normal strokeFile ngang", "normal strokeFile ngang", 1],
+            ["Memorial Garden Stone", "Memorial Garden Stone", 1],
+            
 
 
             ["drink coaster", "drink coaster", 1],
@@ -48,15 +52,16 @@ export const PRODUCTS = [
         [
             ["keyChain normal", "keyChain normal", 2],
             ["keyChain mirror", "keyChain mirror", 2],
-            ["keyChain Alunium", "keyChain Alunium", 2],
+            ["2M keyChain Alunium", "2M keyChain Alunium", 2],
+            ["1M keyChain Alunium", "1M keyChain Alunium", 1],
             ["wood orrnament 2layer", "wood orrnament 2layer", 2],
-            ["ornament go 1M-fill", "ornament gỗ tấm 1M in xong cắt", 1],
-            ["ornament go 2M-fill", "ornament gỗ tấm 2M in xong cắt", 2],
+            ["ornament go 1M-Singer", "ornament gỗ tấm 1M in xong cắt", 1],
+            ["ornament go 2M-Singer", "ornament gỗ tấm 2M in xong cắt", 2],
             ["NEW transparent ORM 1M", "NEW transparent ORM 1M", 1],
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],
-            ["ornament mica 1M-fill", "ornament mica 1M (Bàn cắt)", 1],
-            ["ornament mica 2M-fill", "ornament mica 2M (Bàn cắt)", 2],
+            ["ornament mica 1M-Singer", "ornament mica 1M-file đơn", 1],
+            ["ornament mica 2M-Singer", "ornament mica 2M-file đơn", 2],
             // ["ornament mica DZT", "ornament mica DZT", 1],
             ["mica fix ornament 1M", "mica fix ornament 1M", 1],
             ["mica fix ornament 2M", "mica fix ornament 2M", 2],
@@ -72,13 +77,15 @@ export const PRODUCTS = [
             ["3l Tumble Name Tag", "3l Tumble Name Tag", 1],
             ["glassOrnament", "glass Ornament", 1],
             ["Leather Keychain", "Leather Keychain", 1],
+            ["2M Leather Keychain", "2M Leather Keychain", 1],
             ["3L Shaker Ornament", "3L Shaker Ornament", 1],
             ["5L Shaker Ornament", "5L Shaker Ornament", 1],
+            ["35 layer lop ngoai", "35 layer lop ngoai", 1],
             ["2 layer mix", "2 layer mix", 1],
             ["Glitter Plastic Ornament", "Glitter Plastic Ornament", 1],
             ["Glitter Plastic Ornament 2M", "Glitter Plastic Ornament 2M", 1],
             ["Round Plastic Led String Light", "Round Plastic Led String Light", 1],
-            
+
         ]
     ],
     ["Thớt",
@@ -106,6 +113,7 @@ export const PRODUCTS = [
             ["Stainless-20oz", "Stainless-20oz", 1],
             ["coc30oz", "coc30oz", 1],
             ["skinni-20oz", "skinni-20oz", 1],
+            ["Skinny-thon", "Skinny-thon", 1],
             ["wine-12oz", "wine-12oz", 1],
             ["C Plant Pot", "C Plant Pot", 1],
         ]
