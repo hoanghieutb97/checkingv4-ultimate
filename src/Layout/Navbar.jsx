@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Modal, Input } from 'antd';
 import { DeleteFilled } from '@ant-design/icons';
 import CopyOrderId from '../Components/CopyOrderId';
+import CheckTrello from "./CheckTrello"
 
 function Navbar(props) {
 
@@ -16,7 +17,7 @@ function Navbar(props) {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarText">
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item dropdown active">
+                                {/* <li className="nav-item dropdown active">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         File excel
                                     </a>
@@ -27,10 +28,10 @@ function Navbar(props) {
                                 </li>
                                 <li className="nav-item dropdown active">
                                     <ModalURLDesign />
-                                </li>
+                                </li> */}
                                 <li className="btc">
                                     <CopyOrderId />
-                                    {/* <button type="button" className={"btn btn-" + ((MutiExcel === true) ? "danger" : "light")} onClick={() => setMutiExcel(!MutiExcel)}> {(MutiExcel === true) ? "multi Excel" : "Singer Excel"}</button> */}
+                                    <CheckTrello />
                                 </li>
                             </ul>
                         </div>
@@ -94,7 +95,7 @@ function ModalURLDesign(props) {
                     <div className='d-flex align-items-center justify-content-center mt-2'>
                         <Button type="primary" size="small" className='b-center' onClick={addFileDesign} >Add link design</Button>
                     </div> */}
-                    
+
 
                 </div>
             </Modal>

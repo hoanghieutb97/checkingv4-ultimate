@@ -25,7 +25,7 @@ function InputExcel(props) {
                     let newSheet = rows.map(item => ({
                         orderId: item[0],
                         barcode: item[1],
-                        sku: item[2],
+                        sku: (item[2] != null) ? item[2].toString() : null,
                         Quantity: item[3],
                         variant: item[4],
                         product: item[5],
@@ -42,13 +42,13 @@ function InputExcel(props) {
                     newSheet.shift(); newSheet.shift();
                     newSheet = newSheet.filter(item => item.orderId !== null);
                     listA = [...listA, ...newSheet]
-               
+
                     // if (j == 0) setExcel([...newSheet])
                     // else setExcel([...Excel, ...newSheet])
                     setExcel(listA)
                 })
             }
-         
+
 
             if (gllm.length !== 0) {
 

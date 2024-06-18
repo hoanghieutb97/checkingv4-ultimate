@@ -31,25 +31,6 @@ const UploadForm = () => {
     }
   };
 
-  const handleFileUpload2 = async () => {
-    const formData = new FormData();
-    formData.append('file', file);
-
-    formData.append('NameFolder', localStorage.NameFolder); // Ví dụ: chuỗi 'additionalValue'
-    try {
-      setStatusDown(false)
-
-      const response = await axios.post('http://192.168.1.194:3333/upload', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
-      setStatusDown(true)
-      console.log('File uploaded:', response);
-    } catch (error) {
-      console.error('Error uploading file:', error);
-    }
-  };
 
   return (
     <div className={(StatusDown === true) ? 'vsvsd' : "vdv"}>

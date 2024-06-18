@@ -14,12 +14,12 @@ function Excel(props) {
             <div className='ctn-excel mt-3'>
                 <InputExcel />
             </div>
-            <div className=" ctn-excel tach-sku mt-3">
+            {/* <div className=" ctn-excel tach-sku mt-3">
                 <div className="">
                     <p className="title-ex">Tách Khách</p>
                     <TachKhach />
                 </div>
-            </div>
+            </div> */}
             <div className=" ctn-excel tach-sku mt-3">
                 <div className="">
                     <p className="title-ex">Tách bằng Variant</p>

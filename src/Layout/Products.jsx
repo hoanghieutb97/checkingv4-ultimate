@@ -37,7 +37,6 @@ function Products(props) {
             "ornament mica 1M-fill",
             "ornament mica 2M-fill",
             "ornament mica DZT",
-    
             "ornament led",
             "3d wood base",
             "3d woodBase Teemazing",
@@ -51,30 +50,38 @@ function Products(props) {
             "mica fix ornament 2M",
             "Tumble Name Tag",
             "5L Shaker Ornament",
-            "3L Shaker Ornament"
-            
+            "3L Shaker Ornament",
+            "Luminous Painting Lighting Box",
+            "Led Light Wood Base TMZ"
+
+
         ];
         let arrGo = ["wood orrnament 2layer",
             "ornament go 1M-fill",
             "ornament go 2M-fill",
             "ornament vong huong",
             "wood ornament dls",
-            "wood fix ornament 2M", +
+            "wood fix ornament 2M",
             "wood fix ornament 1M",
             "3layer wood ornament",
             "2layer wood ornament",
             "wood fix ornament 1M",
-            "wood fix ornament 2M"
+            "Wooden Parterre",
+            "wood fix ornament 2M",
+            " Wooden Picture Frame Magnet"
 
 
         ];
         let arrGoXXXXXX = ["FatherDayZirror"]
         let arrMica2cm = ["Heart mica 2cm",
-            "Acrylic Block"
+            "Acrylic Block",
+            "Custom Acrylic Name Night Light",
+            "Custom Acrylic Name Night Light pine",
+
         ];
         let arrNauBan = ["ornament su 1M", "ornament su 2M"];
         if (_.indexOf(arrMica, activeProduct.product) !== (-1))
-            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 812, wAll: 1200 }))
+            dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 812, wAll: 1210 }))
         else if (_.indexOf(arrGo, activeProduct.product) !== (-1))
             dispatch(actions.dispatchProduct({ ...activeProduct, hAll: 910, wAll: 910 }))
         else if (_.indexOf(arrMica2cm, activeProduct.product) !== (-1))

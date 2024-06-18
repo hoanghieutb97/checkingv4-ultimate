@@ -6,8 +6,12 @@ import _ from "lodash";
 function CheckSKU(props) {
 
     const [state, dispatch] = useStore();
-    const { sheet, activeProduct } = state;
-    console.log(state.sheet);
+    var { sheet, activeProduct } = state;
+
+    var unique = {};
+    sheet = sheet.filter(item => {
+        return unique.hasOwnProperty(item.sku) ? false : (unique[item.sku] = true);
+    });
 
     const [DeoMeSheet, setDeoMeSheet] = useState([]);
     let localFile = activeProduct.localFile;
@@ -27,6 +31,7 @@ function CheckSKU(props) {
     }
     let lostSheet = sheet.map(item => {
         if (item.amountFile == "1") {
+
             if (_.intersection(localFile, [item.sku.toLowerCase()]).length == 0) return ({ ...item, haveSku: false })
             else return ({ ...item, haveSku: true })
         }

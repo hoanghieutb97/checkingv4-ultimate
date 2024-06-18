@@ -32,6 +32,12 @@ export default function sortSheet(sheet, product) {
         }
 
     }
+    else if (product === "Ceramic Flower Vase cn") {
+
+        sheet = _.orderBy(sheet, ['country  ', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
+
+
+    }
     else
 
         if (product === "PC glass" ||
@@ -45,11 +51,17 @@ export default function sortSheet(sheet, product) {
             product === "thot amazone" ||
             product === "PC silicon" ||
             product === "FatherDayZirror" ||
-
-
-
+            product === "Photo Magnet" ||
+            product === "Wooden Parterre" ||
+            product === "photo frame lamp" ||
+            product === "Custom Acrylic Name Night Light pine" ||
             product === "dia nhua" ||
+            product === "Led Light Wood Base TMZ" ||
+            product === "Wooden Picture Frame Magnet" ||
+            product === "Photo Magnet 2 3 layer" ||
+
             product === "mica DZT Style") {
+
             sheet = _.orderBy(sheet, ['variant', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
 
 
@@ -68,5 +80,6 @@ export default function sortSheet(sheet, product) {
 
             sheet = sheet.map((item, key) => ({ ...item, stt: key + 1 }));
         }
+
     return sheet
 } 

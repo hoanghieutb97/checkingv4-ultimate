@@ -36,7 +36,29 @@ export const PRODUCTS = [
             ["normal strokeFile", "normal strokeFile", 1],
             ["normal strokeFile ngang", "normal strokeFile ngang", 1],
             ["Memorial Garden Stone", "Memorial Garden Stone", 1],
+            ["Photo Magnet", "Photo Magnet", 1],
+            ["Sun Visor Clip Ken Nguyen", "Sun Visor Clip Ken Nguyen", 1],
+            ["Wooden Parterre", "Wooden Parterre", 1],
+            ["photo album keychain", "photo album keychain", 1],
+            ["Custom Acrylic Name Night Light", "Custom Acrylic Name Night Light", 1],
+            ["Custom Acrylic Name Night Light pine", "Custom Acrylic Name Night Light pine", 1],
+            ["Custom Money Holder", "Custom Money Holder", 1],
+            ["Ceramic Flower Vase", "Ceramic Flower Vase", 1],
+            ["Ceramic Flower Vase cn", "Ceramic Flower Vase cn", 1],
+            ["Acrylic Bookmark", "Acrylic Bookmark", 1],
+            ["3 Layered Sticky Note Holder", "3 Layered Sticky Note Holder", 1],
+            ["Graduation Cap Topper", "Graduation Cap Topper", 1],
+            ["Led Light Wood Base TMZ", "Led Light Wood Base TMZ", 1],
+            ["Wooden Picture Frame Magnet", "Wooden Picture Frame Magnet", 1],
+            ["Photo Magnet 2 3 layer", "Photo Magnet 2 3 layer", 1],
             
+            
+
+            
+
+
+
+
 
 
             ["drink coaster", "drink coaster", 1],
@@ -85,6 +107,7 @@ export const PRODUCTS = [
             ["Glitter Plastic Ornament", "Glitter Plastic Ornament", 1],
             ["Glitter Plastic Ornament 2M", "Glitter Plastic Ornament 2M", 1],
             ["Round Plastic Led String Light", "Round Plastic Led String Light", 1],
+            ["Luminous Painting Lighting Box", "Luminous Painting Lighting Box", 1],
 
         ]
     ],
