@@ -59,7 +59,8 @@ export default function sortSheet(sheet, product) {
             product === "Led Light Wood Base TMZ" ||
             product === "Wooden Picture Frame Magnet" ||
             product === "Photo Magnet 2 3 layer" ||
-
+            product === "Custom 2 Layered Acrylic Keychain" ||
+            
             product === "mica DZT Style") {
 
             sheet = _.orderBy(sheet, ['variant', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));

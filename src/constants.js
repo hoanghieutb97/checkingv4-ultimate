@@ -51,10 +51,10 @@ export const PRODUCTS = [
             ["Led Light Wood Base TMZ", "Led Light Wood Base TMZ", 1],
             ["Wooden Picture Frame Magnet", "Wooden Picture Frame Magnet", 1],
             ["Photo Magnet 2 3 layer", "Photo Magnet 2 3 layer", 1],
-            
-            
 
-            
+
+
+
 
 
 
@@ -74,9 +74,11 @@ export const PRODUCTS = [
         [
             ["keyChain normal", "keyChain normal", 2],
             ["keyChain mirror", "keyChain mirror", 2],
+            ["Custom 2 Layered Acrylic Keychain", "Custom 2 Layered Acrylic Keychain", 1],
+
             ["2M keyChain Alunium", "2M keyChain Alunium", 2],
             ["1M keyChain Alunium", "1M keyChain Alunium", 1],
-            ["wood orrnament 2layer", "wood orrnament 2layer", 2],
+
             ["ornament go 1M-Singer", "ornament gỗ tấm 1M in xong cắt", 1],
             ["ornament go 2M-Singer", "ornament gỗ tấm 2M in xong cắt", 2],
             ["NEW transparent ORM 1M", "NEW transparent ORM 1M", 1],

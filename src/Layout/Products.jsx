@@ -56,9 +56,9 @@ function Products(props) {
 
 
         ];
-        let arrGo = ["wood orrnament 2layer",
-            "ornament go 1M-fill",
-            "ornament go 2M-fill",
+        let arrGo = [
+            "ornament go 1M-Singer",
+            "ornament go 2M-Singer",
             "ornament vong huong",
             "wood ornament dls",
             "wood fix ornament 2M",
