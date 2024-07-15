@@ -5,6 +5,9 @@ export const GLLM = "https://sheet.best/api/sheets/e8876c80-1778-414d-ae68-af6b9
 export const PRODUCTS = [
     ["SP Bình Thường",
         [
+            ["Clipboard", "Clipboard", 1],
+            ["Layered Mix Photo Sign", "Layered Mix Photo Sign", 1],
+
             ["PC glass", "ốp glass", 1],
             ["PC luminous", "ốp luminous", 1],
             ["PC silicon", "ốp silicon", 1],
@@ -59,6 +62,7 @@ export const PRODUCTS = [
 
 
 
+           
 
 
             ["drink coaster", "drink coaster", 1],
@@ -73,6 +77,9 @@ export const PRODUCTS = [
     ["Ornament, móc khóa",
         [
             ["keyChain normal", "keyChain normal", 2],
+            ["suncatcher", "suncatcher", 1],
+         
+
             ["keyChain mirror", "keyChain mirror", 2],
             ["Custom 2 Layered Acrylic Keychain", "Custom 2 Layered Acrylic Keychain", 1],
 
@@ -131,6 +138,7 @@ export const PRODUCTS = [
             ["dia than 2m", "đĩa than 2m", 2],
             ["ornament su 1M", "ornament sứ", 1],
             ["ornament su 2M", "ornament sứ 2 mặt", 2],
+            ["Su Tron 1M GaXep", "Su Tron 1M GaXep", 1],
         ]
     ],
     [
