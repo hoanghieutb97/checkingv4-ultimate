@@ -60,6 +60,7 @@ export default function sortSheet(sheet, product) {
             product === "Wooden Picture Frame Magnet" ||
             product === "Photo Magnet 2 3 layer" ||
             product === "Custom 2 Layered Acrylic Keychain" ||
+            product === "Custom 2 Layered Art Piece" ||
             
             product === "mica DZT Style") {
 

@@ -8,6 +8,7 @@ export const PRODUCTS = [
             ["Clipboard", "Clipboard", 1],
             ["Layered Mix Photo Sign", "Layered Mix Photo Sign", 1],
 
+            ["Custom 2 Layered Art Piece", "Custom 2 Layered Art Piece", 1],
             ["PC glass", "ốp glass", 1],
             ["PC luminous", "ốp luminous", 1],
             ["PC silicon", "ốp silicon", 1],
@@ -62,7 +63,7 @@ export const PRODUCTS = [
 
 
 
-           
+
 
 
             ["drink coaster", "drink coaster", 1],
@@ -78,7 +79,7 @@ export const PRODUCTS = [
         [
             ["keyChain normal", "keyChain normal", 2],
             ["suncatcher", "suncatcher", 1],
-         
+
 
             ["keyChain mirror", "keyChain mirror", 2],
             ["Custom 2 Layered Acrylic Keychain", "Custom 2 Layered Acrylic Keychain", 1],
@@ -139,6 +140,7 @@ export const PRODUCTS = [
             ["ornament su 1M", "ornament sứ", 1],
             ["ornament su 2M", "ornament sứ 2 mặt", 2],
             ["Su Tron 1M GaXep", "Su Tron 1M GaXep", 1],
+            ["Su Tron 1M GaXep su moi", "Su Tron 1M GaXep su moi", 1],
         ]
     ],
     [
