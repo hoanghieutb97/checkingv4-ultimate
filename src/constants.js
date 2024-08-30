@@ -79,7 +79,7 @@ export const PRODUCTS = [
         [
             ["keyChain normal", "keyChain normal", 2],
             ["suncatcher", "suncatcher", 1],
-
+            ["Custom Shape 2-3 Layers Tag", "Custom Shape 2-3 Layers Tag", 1],
 
             ["keyChain mirror", "keyChain mirror", 2],
             ["Custom 2 Layered Acrylic Keychain", "Custom 2 Layered Acrylic Keychain", 1],

@@ -4,6 +4,7 @@ import Excel from './Excel';
 import HuongDan from './HuongDan';
 import ListItems from './ListItems';
 import Products from './Products';
+import ServerStatus from './ServerStatus';
 
 function Body(props) {
     return (
@@ -30,9 +31,10 @@ function Body(props) {
                 <div className=" grid-tag">
                     <div className="title-col">
 
-                        Hướng dẫn
+                        Trạng thái server
                     </div>
-                    <HuongDan />
+                    {/* <HuongDan /> */}
+                    <ServerStatus />
                 </div>
             </div>
             <div className="container-80">

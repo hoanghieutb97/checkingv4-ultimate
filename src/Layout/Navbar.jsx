@@ -31,7 +31,7 @@ function Navbar(props) {
                                 </li> */}
                                 <li className="btc">
                                     <CopyOrderId />
-                                    <CheckTrello />
+                                    {/* <CheckTrello /> */}
                                 </li>
                             </ul>
                         </div>
