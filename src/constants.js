@@ -6,6 +6,7 @@ export const PRODUCTS = [
     ["SP Bình Thường",
         [
             ["Clipboard", "Clipboard", 1],
+            ["decal", "decal", 1],
             ["Layered Mix Photo Sign", "Layered Mix Photo Sign", 1],
 
             ["Custom 2 Layered Art Piece", "Custom 2 Layered Art Piece", 1],
@@ -105,6 +106,8 @@ export const PRODUCTS = [
             ["wood ornament dls", "wood ornament dls", 1],
             ["3layer wood ornament", "3layer wood ornament", 1],
             ["2layer wood ornament", "2layer wood ornament", 1],
+            ["2 Layered Acrylic Ornament", "2 Layered Acrylic Ornament", 1],
+
             ["Tumble Name Tag", "Tumble Name Tag", 1],
             ["3l Tumble Name Tag", "3l Tumble Name Tag", 1],
             ["glassOrnament", "glass Ornament", 1],
