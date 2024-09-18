@@ -79,7 +79,9 @@ export const PRODUCTS = [
     ["Ornament, móc khóa",
         [
             ["keyChain normal", "keyChain normal", 2],
-            ["suncatcher", "suncatcher", 1],
+            ["suncatcher", "suncatcher không file đen", 1],
+            ["Suncatcher Art Piece", "Suncatcher Art Piece - có file đen", 1],
+            
             ["Custom Shape 2-3 Layers Tag", "Custom Shape 2-3 Layers Tag", 1],
 
             ["keyChain mirror", "keyChain mirror", 2],
@@ -143,7 +145,8 @@ export const PRODUCTS = [
             ["ornament su 1M", "ornament sứ", 1],
             ["ornament su 2M", "ornament sứ 2 mặt", 2],
             ["Su Tron 1M GaXep", "Su Tron 1M GaXep", 1],
-            ["Su Tron 1M GaXep su moi", "Su Tron 1M GaXep su moi", 1],
+            ["Su Tron 1M nho", "Su Tron 1M nho", 1],
+            ["Su Tron 2M nho", "Su Tron 2M nho", 1],
         ]
     ],
     [

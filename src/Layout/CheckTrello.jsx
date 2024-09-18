@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import io from 'socket.io-client';
 
 function PasswordProtectedButton() {
   const [showPasswordInput, setShowPasswordInput] = useState(false);
@@ -42,15 +43,35 @@ function PasswordProtectedButton() {
   const HandleResetServerClient = () => {
     axios.get('http://192.168.1.240:3012/resetServer')
       .then(response => {
-       
+
       })
       .catch(error => {
-       
+
       });
   };
 
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  const [imageSrc, setImageSrc] = useState('');
+  useEffect(() => {
+    // Kết nối với server Node.js qua WebSocket
+    const socket = io('https://192.168.1.90:3013'); // Thay thế 'PC1_IP_ADDRESS' bằng địa chỉ IP của PC1
+
+    // Nhận dữ liệu hình ảnh từ server
+    socket.on('screenshot', (data) => {
+      setImageSrc('data:image/png;base64,' + data);
+    });
+
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
+
   return (
     <div>
+
+
       {!showSecretButton && (
         <button onClick={handleInitialButtonClick} className='d-none'></button>
       )}
@@ -67,7 +88,22 @@ function PasswordProtectedButton() {
         </div>
       )}
       {showSecretButton && (
-        <div className='gggsed'> <button onClick={HandleResetServerClient} className='ssdvsdvsdv' >Khởi động lại server</button></div>
+        <div className='gggsed'>
+          <div className="row">
+            <div className="col-12">
+              <div>
+
+                <img src={imageSrc} alt="Màn hình chia sẻ" style={{ width: '100%' }} />
+              </div>
+            </div>
+            <div className="col-12 vdfvfd">
+              <button onClick={HandleResetServerClient} className='ssdvsdvsdv' >Khởi động lại server</button>
+            </div>
+          </div>
+
+
+
+        </div>
       )}
       {errorMessage && (
         <div style={{ color: 'red' }}>{errorMessage}</div>

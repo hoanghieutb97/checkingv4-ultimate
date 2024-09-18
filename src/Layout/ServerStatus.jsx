@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import io from 'socket.io-client';
 import CheckTrello from "./CheckTrello";
 const socket = io('192.168.1.240:3010'); // Kết nối tới server Node.js
@@ -33,8 +33,8 @@ function ServerStatus() {
     useEffect(() => {
         // Nhận tin nhắn chào mừng từ server
         socket.on('welcome', (msg) => {
-            console.log("hehehehehe---------------hehehe",msg);
-            
+            console.log("hehehehehe---------------hehehe", msg);
+
             setReceivedMessage(msg);
             setStatus('Connected to server');
         });
@@ -135,6 +135,7 @@ function ServerStatus() {
     };
     // console.log(receivedMessage_tool1);
 
+
     return (
         <div className="App">
 
@@ -144,7 +145,7 @@ function ServerStatus() {
                     <div className={(status !== "Connected to server") ? 'sttsvfalse' : 'sttsvtrue'}> {status}</div>
                     <div className="row ">
                         <div className="col-12 sdvsdv">
-                           <span className='vsdv'>Số card: </span>  <span className='vsdvvbnn'>{receivedMessage}</span>
+                            <span className='vsdv'>Số card: </span>  <span className='vsdvvbnn'>{receivedMessage}</span>
                         </div>
                     </div>
 
@@ -173,6 +174,8 @@ function ServerStatus() {
 
                 </div>
             </div>
+          
+
             <div className="row">
                 <div className="col-12">
                     <CheckTrello />
