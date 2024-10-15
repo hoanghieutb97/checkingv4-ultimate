@@ -81,6 +81,7 @@ export const PRODUCTS = [
             ["keyChain normal", "keyChain normal", 2],
             ["suncatcher", "suncatcher không file đen", 1],
             ["Suncatcher Art Piece", "Suncatcher Art Piece - có file đen", 1],
+            ["Custom Wooden Slider Ornament", "Custom Wooden Slider Ornament", 1],
             
             ["Custom Shape 2-3 Layers Tag", "Custom Shape 2-3 Layers Tag", 1],
 
@@ -123,6 +124,8 @@ export const PRODUCTS = [
             ["Glitter Plastic Ornament 2M", "Glitter Plastic Ornament 2M", 1],
             ["Round Plastic Led String Light", "Round Plastic Led String Light", 1],
             ["Luminous Painting Lighting Box", "Luminous Painting Lighting Box", 1],
+            ["Stained Glass Suncatcher", "Stained Glass Suncatcher", 1],
+            
 
         ]
     ],

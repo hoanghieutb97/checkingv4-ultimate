@@ -56,7 +56,7 @@ function PasswordProtectedButton() {
   const [imageSrc, setImageSrc] = useState('');
   useEffect(() => {
     // Kết nối với server Node.js qua WebSocket
-    const socket = io('https://192.168.1.90:3013'); // Thay thế 'PC1_IP_ADDRESS' bằng địa chỉ IP của PC1
+    const socket = io('https://192.168.1.90:3012'); // Thay thế 'PC1_IP_ADDRESS' bằng địa chỉ IP của PC1
 
     // Nhận dữ liệu hình ảnh từ server
     socket.on('screenshot', (data) => {
