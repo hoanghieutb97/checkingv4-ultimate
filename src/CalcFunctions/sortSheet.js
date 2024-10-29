@@ -61,15 +61,19 @@ export default function sortSheet(sheet, product) {
             product === "Photo Magnet 2 3 layer" ||
             product === "Custom 2 Layered Acrylic Keychain" ||
             product === "Custom 2 Layered Art Piece" ||
-            product === "Suncatcher Art Piece" ||
-            product === "1 Layer Suncatcher Ornament" ||
-            
-            product === "mica DZT Style") {
 
+
+            product === "mica DZT Style") {
+            console.log(sheet);
             sheet = _.orderBy(sheet, ['variant', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
 
 
         }
+        else if (product === "Suncatcher Art Piece" ||
+            product === "1 Layer Suncatcher Ornament") {
+            sheet = _.orderBy(sheet, ['width', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
+        }
+
         else if (product === "NEW transparent ORM 1M" ||
             product === "Leather Keychain" ||
             product === "2M Leather Keychain" ||
