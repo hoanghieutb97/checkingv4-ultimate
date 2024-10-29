@@ -17,7 +17,10 @@ export const PRODUCTS = [
             ["dock", "dock", 1],
             ["print metal", "print metal", 1],
             ["cut metal", "cut metal", 1],
+            ["Wind Spinner", "Wind Spinner", 1],
+            
             ["normal", "normal", 1],
+
             ["mirror normal", "normal mirror", 1],
             ["mirror normal StrokFile", "mirror normal StrokFile", 1],
             ["candle holder", "candle holder", 1],
@@ -81,7 +84,10 @@ export const PRODUCTS = [
             ["keyChain normal", "keyChain normal", 2],
             ["suncatcher", "suncatcher không file đen", 1],
             ["Suncatcher Art Piece", "Suncatcher Art Piece - có file đen", 1],
+            ["1 Layer Suncatcher Ornament", "1 Layer Suncatcher Ornament", 1],
+            
             ["Custom Wooden Slider Ornament", "Custom Wooden Slider Ornament", 1],
+            ["Custom Acrylic Slider Ornament", "Custom Acrylic Slider Ornament", 1],
             
             ["Custom Shape 2-3 Layers Tag", "Custom Shape 2-3 Layers Tag", 1],
 

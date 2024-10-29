@@ -61,6 +61,8 @@ export default function sortSheet(sheet, product) {
             product === "Photo Magnet 2 3 layer" ||
             product === "Custom 2 Layered Acrylic Keychain" ||
             product === "Custom 2 Layered Art Piece" ||
+            product === "Suncatcher Art Piece" ||
+            product === "1 Layer Suncatcher Ornament" ||
             
             product === "mica DZT Style") {
 

@@ -34,7 +34,7 @@ function Body(props) {
                         Trạng thái server
                     </div>
                     {/* <HuongDan /> */}
-                    <ServerStatus />
+                    {/* <ServerStatus /> */}
                 </div>
             </div>
             <div className="container-80">
