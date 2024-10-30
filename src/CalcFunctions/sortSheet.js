@@ -70,14 +70,22 @@ export default function sortSheet(sheet, product) {
 
         }
         else if (product === "Suncatcher Art Piece" ||
-            product === "1 Layer Suncatcher Ornament") {
+            product === "suncatcher" ||
+            product === "1 Layer Suncatcher Ornament"||
+            product === "ornament mica 1M-Singer"||
+            product === "ornament mica 2M-Singer"||
+            product === "ornament go 1M-Singer"||
+            product === "ornament go 2M-Singer"||
+            product === "NEW transparent ORM 1M"||
+            product === "NEW transparent ORM 2M"
+
+        ) {
             sheet = _.orderBy(sheet, ['width', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
         }
 
-        else if (product === "NEW transparent ORM 1M" ||
+        else if (
             product === "Leather Keychain" ||
-            product === "2M Leather Keychain" ||
-            product === "NEW transparent ORM 2M") {
+            product === "2M Leather Keychain" ) {
             sheet = _.orderBy(sheet, ['nameId', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
         }
         else {
