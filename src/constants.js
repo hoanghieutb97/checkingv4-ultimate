@@ -17,6 +17,7 @@ export const PRODUCTS = [
             ["dock", "dock", 1],
             ["print metal", "print metal", 1],
             ["cut metal", "cut metal", 1],
+            ["Custom Metal Art Piece", "Custom Metal Art Piece", 1],
             ["Wind Spinner", "Wind Spinner", 1],
             
             ["normal", "normal", 1],
@@ -111,6 +112,8 @@ export const PRODUCTS = [
             ["wood fix ornament 2M", "wood fix ornament 2M", 2],
             // ["mica DZT Style 2M", "mica DZT Style 2M", 2],
             ["ornament vong huong", "ornament vòng hương", 1],
+            ["Christmas Door Ornament", "Christmas Door Ornament", 1],
+            
             ["ornament led", "ornament led", 1],
             ["wood ornament dls", "wood ornament dls", 1],
             ["3layer wood ornament", "3layer wood ornament", 1],

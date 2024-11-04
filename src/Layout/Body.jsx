@@ -33,7 +33,7 @@ function Body(props) {
 
                         Trạng thái server
                     </div>
-                    {/* <HuongDan /> */}
+                    <HuongDan />
                     {/* <ServerStatus /> */}
                 </div>
             </div>

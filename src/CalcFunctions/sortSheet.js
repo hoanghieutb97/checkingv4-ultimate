@@ -75,6 +75,8 @@ export default function sortSheet(sheet, product) {
             product === "ornament mica 1M-Singer"||
             product === "ornament mica 2M-Singer"||
             product === "ornament go 1M-Singer"||
+            product === "2layer wood ornament"||
+          
             product === "ornament go 2M-Singer"||
             product === "NEW transparent ORM 1M"||
             product === "NEW transparent ORM 2M"
