@@ -123,6 +123,7 @@ export const PRODUCTS = [
             ["Tumble Name Tag", "Tumble Name Tag", 1],
             ["3l Tumble Name Tag", "3l Tumble Name Tag", 1],
             ["glassOrnament", "glass Ornament", 1],
+            ["glassOrnament tron", "glass Ornament tron", 1],
             ["Leather Keychain", "Leather Keychain", 1],
             ["2M Leather Keychain", "2M Leather Keychain", 1],
             ["3L Shaker Ornament", "3L Shaker Ornament", 1],
