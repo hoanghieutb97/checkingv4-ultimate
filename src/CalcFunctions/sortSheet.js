@@ -79,9 +79,13 @@ export default function sortSheet(sheet, product) {
             product === "2 layer mix"||
             product === "3L Shaker Ornament"||
             product === "5L Shaker Ornament"||
+            product === "Christmas Tree Topper"||
             
             product === "ornament go 2M-Singer"||
             product === "NEW transparent ORM 1M"||
+            product === "NEW transparent ORM 1M Wooden"||
+            product === "Stained Glass Suncatcher"||
+            
             product === "NEW transparent ORM 2M"
 
         ) {

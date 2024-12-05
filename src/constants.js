@@ -60,10 +60,11 @@ export const PRODUCTS = [
             ["Led Light Wood Base TMZ", "Led Light Wood Base TMZ", 1],
             ["Wooden Picture Frame Magnet", "Wooden Picture Frame Magnet", 1],
             ["Photo Magnet 2 3 layer", "Photo Magnet 2 3 layer", 1],
+            ["Christmas Tree Topper", "Christmas Tree Topper", 1],
 
+            
 
-
-
+            
 
 
 
@@ -97,9 +98,11 @@ export const PRODUCTS = [
 
             ["2M keyChain Alunium", "2M keyChain Alunium", 2],
             ["1M keyChain Alunium", "1M keyChain Alunium", 1],
-
+            ["Christmas 3D Ball Ornament", "Christmas 3D Ball Ornament", 1],
+            
             ["ornament go 1M-Singer", "ornament gỗ tấm 1M in xong cắt", 1],
             ["ornament go 2M-Singer", "ornament gỗ tấm 2M in xong cắt", 2],
+            ["NEW transparent ORM 1M Wooden", "NEW transparent ORM 1M Wooden", 1],
             ["NEW transparent ORM 1M", "NEW transparent ORM 1M", 1],
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],
@@ -160,6 +163,9 @@ export const PRODUCTS = [
             ["Su Tron 1M GaXep", "Su Tron 1M GaXep", 1],
             ["Su Tron 1M nho", "Su Tron 1M nho", 1],
             ["Su Tron 2M nho", "Su Tron 2M nho", 1],
+            ["ornament su medalion moi 1M", "ornament su medalion moi 1M", 1],
+            ["ornament su medalion moi 2M", "ornament su medalion moi 2M", 2],
+            
         ]
     ],
     [
