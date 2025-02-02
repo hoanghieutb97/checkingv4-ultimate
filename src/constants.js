@@ -61,6 +61,7 @@ export const PRODUCTS = [
             ["Wooden Picture Frame Magnet", "Wooden Picture Frame Magnet", 1],
             ["Photo Magnet 2 3 layer", "Photo Magnet 2 3 layer", 1],
             ["Christmas Tree Topper", "Christmas Tree Topper", 1],
+            ["Desk Name Plate Night Light", "Desk Name Plate Night Light", 1],
 
             
 
