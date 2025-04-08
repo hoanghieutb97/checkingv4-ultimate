@@ -139,6 +139,7 @@ export const PRODUCTS = [
             ["Round Plastic Led String Light", "Round Plastic Led String Light", 1],
             ["Luminous Painting Lighting Box", "Luminous Painting Lighting Box", 1],
             ["Stained Glass Suncatcher", "Stained Glass Suncatcher", 1],
+            ["Stained Glass Ornament type 2 ", "Stained Glass Ornament type 2 ", 1],
             
 
         ]
@@ -180,7 +181,7 @@ export const PRODUCTS = [
         ]
     ], [
         "Đặc biệt", [
-            ["kinlytoy", "kinlytoy", 0],
+            ["puzzle hehe", "puzzle hehe", 0],
             ["cai gi day", "cai gi day", 1],
             ["reusable school", "reusable school", 1],
             ["2 layer vc", "2 layer vc", 1],

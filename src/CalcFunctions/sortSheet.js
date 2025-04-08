@@ -85,6 +85,7 @@ export default function sortSheet(sheet, product) {
             product === "NEW transparent ORM 1M"||
             product === "NEW transparent ORM 1M Wooden"||
             product === "Stained Glass Suncatcher"||
+            product === "Desk Name Plate Night Light"||
             
             product === "NEW transparent ORM 2M"
 
