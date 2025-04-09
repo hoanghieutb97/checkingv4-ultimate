@@ -140,7 +140,8 @@ export const PRODUCTS = [
             ["Luminous Painting Lighting Box", "Luminous Painting Lighting Box", 1],
             ["Stained Glass Suncatcher", "Stained Glass Suncatcher", 1],
             ["Stained Glass Ornament type 2", "Stained Glass Ornament type 2", 1],
-
+            ["Stained Glass Suncatcher - Type 2", "Stained Glass Suncatcher - Type 2", 1],
+            
         ]
     ],
     ["Thớt",

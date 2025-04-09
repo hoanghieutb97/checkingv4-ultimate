@@ -87,7 +87,10 @@ export default function sortSheet(sheet, product) {
             product === "Stained Glass Suncatcher"||
             product === "Desk Name Plate Night Light"||
             
-            product === "NEW transparent ORM 2M"
+            product === "NEW transparent ORM 2M"||
+            product === "Stained Glass Suncatcher"||
+            product === "Stained Glass Ornament type 2"||
+            product === "Stained Glass Suncatcher - Type 2"
 
         ) {
             sheet = _.orderBy(sheet, ['width', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
