@@ -36,8 +36,13 @@ function InputExcel(props) {
                         orderName: item[10],
                         note: item[11],
                         location: item[12],
-                        LineItemName: item[13],
-                        LocalFile: item[14],
+                        ItemBarcode: item[13],
+                        TikTokShipBy: item[14],
+                        Priority: item[15],
+                        Factory: item[16],
+                        ProductionNote: item[17],
+                        QCNote: item[18],
+                        Status: item[19]
                     }))
                     newSheet.shift(); newSheet.shift();
                     newSheet = newSheet.filter(item => item.orderId !== null);

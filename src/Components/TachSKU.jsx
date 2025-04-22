@@ -11,6 +11,29 @@ function TachSKU(props) {
     const [ActiveButton, setActiveButton] = useState(false);
     const [ActiveSheet, setActiveSheet] = useState([]);
     let localFile = activeProduct.localFile
+    let vcll = {
+        orderId: '#OrderId',
+        barcode: 'Barcode',
+        sku: 'SKU',
+        Quantity: "Quantity",
+        variant: 'Variant',
+        product: 'Product Type',
+        country: 'Country Code',
+        partner: 'Partner',
+        urlDesign: 'Design URL',
+        dateItem: 'Date Received',
+        orderName: 'Order Name',
+        note: "Note",
+        location: 'Location',
+        ItemBarcode: 'Item Barcode',
+        OrderType: "Order Type",
+        TikTokShipBy: "TikTok Ship By",
+        Priority: "Priority",
+        Factory: "Factory",
+        ProductionNote: "Production Note",
+        QCNote: "QC Note",
+        Status: "Status"
+    }
     let handChangeButton = (param) => {
 
         if (param) {
@@ -48,7 +71,7 @@ function TachSKU(props) {
 
         }
 
-        let returnSheet = [, ...ActiveSheet]
+        let returnSheet = [vcll, ...ActiveSheet]
         const ws = XLSX.utils.json_to_sheet(returnSheet)
         const wb = XLSX.utils.book_new()
         XLSX.utils.book_append_sheet(wb, ws, 'Sheet1')
