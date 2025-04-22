@@ -19,7 +19,7 @@ export const PRODUCTS = [
             ["cut metal", "cut metal", 1],
             ["Custom Metal Art Piece", "Custom Metal Art Piece", 1],
             ["Wind Spinner", "Wind Spinner", 1],
-            
+
             ["normal", "normal", 1],
 
             ["mirror normal", "normal mirror", 1],
@@ -63,9 +63,9 @@ export const PRODUCTS = [
             ["Christmas Tree Topper", "Christmas Tree Topper", 1],
             ["Desk Name Plate Night Light", "Desk Name Plate Night Light", 1],
 
-            
 
-            
+
+
 
 
 
@@ -88,10 +88,10 @@ export const PRODUCTS = [
             ["suncatcher", "suncatcher không file đen", 1],
             ["Suncatcher Art Piece", "Suncatcher Art Piece - có file đen", 1],
             ["1 Layer Suncatcher Ornament", "1 Layer Suncatcher Ornament", 1],
-            
+
             ["Custom Wooden Slider Ornament", "Custom Wooden Slider Ornament", 1],
             ["Custom Acrylic Slider Ornament", "Custom Acrylic Slider Ornament", 1],
-            
+
             ["Custom Shape 2-3 Layers Tag", "Custom Shape 2-3 Layers Tag", 1],
 
             ["keyChain mirror", "keyChain mirror", 2],
@@ -100,11 +100,13 @@ export const PRODUCTS = [
             ["2M keyChain Alunium", "2M keyChain Alunium", 2],
             ["1M keyChain Alunium", "1M keyChain Alunium", 1],
             ["Christmas 3D Ball Ornament", "Christmas 3D Ball Ornament", 1],
-            
+
             ["ornament go 1M-Singer", "ornament gỗ tấm 1M in xong cắt", 1],
             ["ornament go 2M-Singer", "ornament gỗ tấm 2M in xong cắt", 2],
             ["NEW transparent ORM 1M Wooden", "NEW transparent ORM 1M Wooden", 1],
             ["NEW transparent ORM 1M", "NEW transparent ORM 1M", 1],
+            ["NEW transparent ORM 1M no white", "NEW transparent ORM 1M no white", 1],
+
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],
             ["ornament mica 1M-Singer", "ornament mica 1M-file đơn", 1],
@@ -117,7 +119,7 @@ export const PRODUCTS = [
             // ["mica DZT Style 2M", "mica DZT Style 2M", 2],
             ["ornament vong huong", "ornament vòng hương", 1],
             ["Christmas Door Ornament", "Christmas Door Ornament", 1],
-            
+
             ["ornament led", "ornament led", 1],
             ["wood ornament dls", "wood ornament dls", 1],
             ["3layer wood ornament", "3layer wood ornament", 1],
@@ -141,7 +143,9 @@ export const PRODUCTS = [
             ["Stained Glass Suncatcher", "Stained Glass Suncatcher", 1],
             ["Stained Glass Ornament type 2", "Stained Glass Ornament type 2", 1],
             ["Stained Glass Suncatcher - Type 2", "Stained Glass Suncatcher - Type 2", 1],
-            
+            ["Stained Glass Ornament", "Stained Glass Ornament", 1],
+            ["Ceramic Jewelry Tray", "Ceramic Jewelry Tray", 1],
+
         ]
     ],
     ["Thớt",
@@ -167,7 +171,7 @@ export const PRODUCTS = [
             ["Su Tron 2M nho", "Su Tron 2M nho", 1],
             ["ornament su medalion moi 1M", "ornament su medalion moi 1M", 1],
             ["ornament su medalion moi 2M", "ornament su medalion moi 2M", 2],
-            
+
         ]
     ],
     [

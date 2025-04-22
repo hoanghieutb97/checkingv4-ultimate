@@ -34,7 +34,7 @@ export default function sortSheet(sheet, product) {
     }
     else if (product === "Ceramic Flower Vase cn") {
 
-        sheet = _.orderBy(sheet, ['country  ', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
+        sheet = _.orderBy(sheet, ['country', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
 
 
     }
@@ -83,6 +83,8 @@ export default function sortSheet(sheet, product) {
             
             product === "ornament go 2M-Singer"||
             product === "NEW transparent ORM 1M"||
+            product === "NEW transparent ORM 1M no white"||
+            
             product === "NEW transparent ORM 1M Wooden"||
             product === "Stained Glass Suncatcher"||
             product === "Desk Name Plate Night Light"||
@@ -90,7 +92,9 @@ export default function sortSheet(sheet, product) {
             product === "NEW transparent ORM 2M"||
             product === "Stained Glass Suncatcher"||
             product === "Stained Glass Ornament type 2"||
+            product === "Stained Glass Ornament"||
             product === "Stained Glass Suncatcher - Type 2"
+            
 
         ) {
             sheet = _.orderBy(sheet, ['width', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
