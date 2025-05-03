@@ -107,7 +107,9 @@ export const PRODUCTS = [
             ["NEW transparent ORM 1M", "NEW transparent ORM 1M", 1],
             ["NEW transparent ORM 1M no white", "NEW transparent ORM 1M no white", 1],
             ["Suncatcher Acrylic Bookmark", "Suncatcher Acrylic Bookmark", 1],
-            ["Custom Shape Acrylic Block TMZ", "Custom Shape Acrylic Block ", 1],
+            ["Custom Shape Acrylic Block TMZ", "Custom Shape Acrylic Block TMZ", 1],
+            ["A Custom Shape Keychain With Charm", "A Custom Shape Keychain With Charm", 1],
+            ["Custom Shape Fridge Magnet", "Custom Shape Fridge Magnet", 1],
 
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],

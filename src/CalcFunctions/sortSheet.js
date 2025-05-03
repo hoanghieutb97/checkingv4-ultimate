@@ -71,31 +71,33 @@ export default function sortSheet(sheet, product) {
         }
         else if (product === "Suncatcher Art Piece" ||
             product === "suncatcher" ||
-            product === "1 Layer Suncatcher Ornament"||
-            product === "ornament mica 1M-Singer"||
-            product === "ornament mica 2M-Singer"||
-            product === "ornament go 1M-Singer"||
-            product === "2layer wood ornament"||
-            product === "2 layer mix"||
-            product === "3L Shaker Ornament"||
-            product === "5L Shaker Ornament"||
-            product === "Christmas Tree Topper"||
-            
-            product === "ornament go 2M-Singer"||
-            product === "NEW transparent ORM 1M"||
-            product === "NEW transparent ORM 1M no white"||
-            
-            product === "NEW transparent ORM 1M Wooden"||
-            product === "Stained Glass Suncatcher"||
-            product === "Desk Name Plate Night Light"||
-            product === "Custom Shape Acrylic Block TMZ"||
-            
-            product === "NEW transparent ORM 2M"||
-            product === "Stained Glass Suncatcher"||
-            product === "Stained Glass Ornament type 2"||
-            product === "Stained Glass Ornament"||
+            product === "1 Layer Suncatcher Ornament" ||
+            product === "ornament mica 1M-Singer" ||
+            product === "ornament mica 2M-Singer" ||
+            product === "ornament go 1M-Singer" ||
+            product === "2layer wood ornament" ||
+            product === "2 layer mix" ||
+            product === "3L Shaker Ornament" ||
+            product === "5L Shaker Ornament" ||
+            product === "Christmas Tree Topper" ||
+
+            product === "ornament go 2M-Singer" ||
+            product === "NEW transparent ORM 1M" ||
+            product === "NEW transparent ORM 1M no white" ||
+
+            product === "NEW transparent ORM 1M Wooden" ||
+            product === "Stained Glass Suncatcher" ||
+            product === "Desk Name Plate Night Light" ||
+            product === "Custom Shape Acrylic Block TMZ" ||
+            product === "A Custom Shape Keychain With Charm" ||
+
+            product === "NEW transparent ORM 2M" ||
+            product === "Stained Glass Suncatcher" ||
+            product === "Stained Glass Ornament type 2" ||
+            product === "Stained Glass Ornament" ||
+            product === "Custom Shape Fridge Magnet" ||
             product === "Stained Glass Suncatcher - Type 2"
-            
+
 
         ) {
             sheet = _.orderBy(sheet, ['width', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
@@ -103,7 +105,7 @@ export default function sortSheet(sheet, product) {
 
         else if (
             product === "Leather Keychain" ||
-            product === "2M Leather Keychain" ) {
+            product === "2M Leather Keychain") {
             sheet = _.orderBy(sheet, ['nameId', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
         }
         else {
