@@ -110,6 +110,8 @@ export const PRODUCTS = [
             ["Custom Shape Acrylic Block TMZ", "Custom Shape Acrylic Block TMZ", 1],
             ["A Custom Shape Keychain With Charm", "A Custom Shape Keychain With Charm", 1],
             ["Custom Shape Fridge Magnet", "Custom Shape Fridge Magnet", 1],
+            ["3L Acrylic Shaker Keychain", "3L Acrylic Shaker Keychain", 1],
+            ["Ceramic Flower Vase cn nho", "Ceramic Flower Vase cn nho", 1],
 
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],
