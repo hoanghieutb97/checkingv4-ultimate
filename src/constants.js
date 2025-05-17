@@ -112,6 +112,9 @@ export const PRODUCTS = [
             ["Custom Shape Fridge Magnet", "Custom Shape Fridge Magnet", 1],
             ["3L Acrylic Shaker Keychain", "3L Acrylic Shaker Keychain", 1],
             ["Ceramic Flower Vase cn nho", "Ceramic Flower Vase cn nho", 1],
+            ["tranh trang guong", "tranh trang guong", 1],
+            ["Custom Shape Photo Light Box", "Custom Shape Photo Light Box", 1],
+            ["Magnetic Car Visor Photo Clip", "Magnetic Car Visor Photo Clip", 1],
 
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],

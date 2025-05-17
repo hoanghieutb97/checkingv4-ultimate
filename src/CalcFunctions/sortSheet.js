@@ -90,14 +90,17 @@ export default function sortSheet(sheet, product) {
             product === "Desk Name Plate Night Light" ||
             product === "Custom Shape Acrylic Block TMZ" ||
             product === "A Custom Shape Keychain With Charm" ||
-
+            product === "Custom Shape Photo Light Box" ||
+            product === "Magnetic Car Visor Photo Clip" ||
+            
             product === "NEW transparent ORM 2M" ||
             product === "Stained Glass Suncatcher" ||
             product === "Stained Glass Ornament type 2" ||
             product === "Stained Glass Ornament" ||
             product === "Custom Shape Fridge Magnet" ||
+            product === "tranh trang guong" ||
             product === "Stained Glass Suncatcher - Type 2"
-
+            
 
         ) {
             sheet = _.orderBy(sheet, ['width', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
