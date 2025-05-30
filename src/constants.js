@@ -115,6 +115,7 @@ export const PRODUCTS = [
             ["tranh trang guong", "tranh trang guong", 1],
             ["Custom Shape Photo Light Box", "Custom Shape Photo Light Box", 1],
             ["Magnetic Car Visor Photo Clip", "Magnetic Car Visor Photo Clip", 1],
+            ["3 Layered Shaker Fridge Magnet", "3 Layered Shaker Fridge Magnet", 1],
 
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],

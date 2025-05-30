@@ -92,6 +92,7 @@ export default function sortSheet(sheet, product) {
             product === "A Custom Shape Keychain With Charm" ||
             product === "Custom Shape Photo Light Box" ||
             product === "Magnetic Car Visor Photo Clip" ||
+            product === "3 Layered Shaker Fridge Magnet" ||
             
             product === "NEW transparent ORM 2M" ||
             product === "Stained Glass Suncatcher" ||
