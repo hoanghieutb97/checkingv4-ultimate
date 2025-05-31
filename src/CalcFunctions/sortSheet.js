@@ -80,6 +80,7 @@ export default function sortSheet(sheet, product) {
             product === "3L Shaker Ornament" ||
             product === "5L Shaker Ornament" ||
             product === "Christmas Tree Topper" ||
+            product === "1M Photo Building Block" ||
 
             product === "ornament go 2M-Singer" ||
             product === "NEW transparent ORM 1M" ||
@@ -93,7 +94,7 @@ export default function sortSheet(sheet, product) {
             product === "Custom Shape Photo Light Box" ||
             product === "Magnetic Car Visor Photo Clip" ||
             product === "3 Layered Shaker Fridge Magnet" ||
-            
+
             product === "NEW transparent ORM 2M" ||
             product === "Stained Glass Suncatcher" ||
             product === "Stained Glass Ornament type 2" ||
@@ -101,7 +102,7 @@ export default function sortSheet(sheet, product) {
             product === "Custom Shape Fridge Magnet" ||
             product === "tranh trang guong" ||
             product === "Stained Glass Suncatcher - Type 2"
-            
+
 
         ) {
             sheet = _.orderBy(sheet, ['width', 'orderId', 'sku'], ['asc', 'asc', 'asc']).map((item, key) => ({ ...item, stt: key + 1 }));
