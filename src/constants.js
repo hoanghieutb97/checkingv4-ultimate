@@ -117,6 +117,7 @@ export const PRODUCTS = [
             ["Magnetic Car Visor Photo Clip", "Magnetic Car Visor Photo Clip", 1],
             ["3 Layered Shaker Fridge Magnet", "3 Layered Shaker Fridge Magnet", 1],
             ["1M Photo Building Block", "1M Photo Building Block", 1],
+            ["2M Photo Building Block", "2M Photo Building Block", 1],
 
             ["NEW transparent ORM 2M", "NEW transparent ORM 2M", 1],
             ["ornament go 2M-1m2x2m4", "ornament gỗ 2M-1m2x2m4", 2],

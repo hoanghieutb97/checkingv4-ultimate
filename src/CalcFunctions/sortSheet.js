@@ -81,6 +81,7 @@ export default function sortSheet(sheet, product) {
             product === "5L Shaker Ornament" ||
             product === "Christmas Tree Topper" ||
             product === "1M Photo Building Block" ||
+            product === "2M Photo Building Block" ||
 
             product === "ornament go 2M-Singer" ||
             product === "NEW transparent ORM 1M" ||
